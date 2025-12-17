@@ -63,21 +63,27 @@ body {
   padding: 15px 0;
 }
 
-.navbar ul {
+
+/* Navigation Logic (User Requested) */
+.nav-list {
   display: flex;
-  justify-content: flex-end;
   list-style: none;
-  margin: 0;
   padding: 0;
+  margin: 0;
+  gap: 20px;
+  justify-content: flex-end;
+  /* Preserved alignment from previous styles */
   align-items: center;
 }
 
-.navbar li {
+.nav-item {
   position: relative;
-  padding: 0;
+  /* needed for dropdown positioning */
+  cursor: pointer;
 }
 
-.navbar a {
+.nav-item a {
+  /* Applied styles to main links */
   display: block;
   padding: 25px 15px;
   color: #333;
@@ -88,56 +94,72 @@ body {
   transition: color 0.3s;
 }
 
-.navbar a:hover {
+.nav-item:hover>a {
   color: var(--color-secondary-red);
 }
 
-/* Dropdown Menu */
-.dropdown-menu {
-  position: absolute;
-  top: 100%;
-  left: 0;
-  background-color: white;
-  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
-  width: 220px;
+/* Dropdown */
+.dropdown {
   display: none;
-  flex-direction: column;
+  /* hidden by default */
+  position: absolute;
+  /* relative to parent li */
+  top: 100%;
+  /* just below parent */
+  left: 0;
+  background: #fff;
+  list-style: none;
+  padding: 10px 0;
+  margin: 0;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  min-width: 220px;
+  /* Adjusted to 220px to match previous design preference */
+  z-index: 1000;
   border-top: 3px solid var(--color-secondary-red);
+  /* Preserved refined styling */
 }
 
-.navbar li:hover .dropdown-menu {
+/* Show dropdown on hover */
+.nav-item:hover .dropdown {
   display: block;
 }
 
-.dropdown-menu li {
+/* Dropdown Items */
+.dropdown li {
+  padding: 0;
   width: 100%;
 }
 
-.dropdown-menu a {
-  padding: 12px 20px;
+.dropdown li a {
+  display: block;
+  padding: 10px 20px;
   font-size: 13px;
   border-bottom: 1px solid #eee;
   text-transform: capitalize;
   color: #555;
+  white-space: nowrap;
 }
 
-.dropdown-menu a:hover {
+.dropdown li:hover {
   background-color: #f9f9f9;
+}
+
+.dropdown li:hover a {
   color: var(--color-secondary-red);
 }
 
-/* Contact Button in Nav */
-.btn-contact {
+/* Contact Button Override */
+.nav-item .btn-contact {
   background-color: var(--color-secondary-red);
   color: white !important;
   padding: 10px 25px !important;
   border-radius: 4px;
   margin-left: 10px;
-  margin-top: -2px;
-  /* Alignment tweak */
+  margin-top: 0;
+  display: inline-block;
 }
 
-.btn-contact:hover {
+.nav-item .btn-contact:hover {
   background-color: #d60b2a;
   color: white !important;
 }
