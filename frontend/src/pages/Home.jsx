@@ -120,20 +120,19 @@ const Home = () => {
                 <div style={{ position: 'absolute', top: 0, left: 0, width: '100%', height: '100%', backgroundColor: 'rgba(8, 34, 122, 0.8)' }}></div>
                 <div className="container" style={{ position: 'relative', zIndex: 2, display: 'flex', justifyContent: 'space-around', flexWrap: 'wrap', gap: '30px', textAlign: 'center', color: 'white' }}>
                     <div>
-                        <h3 style={{ fontSize: '50px', fontWeight: '700' }}>2500+</h3>
-                        <p style={{ fontSize: '18px' }}>Active Clients</p>
+                        <h3 style={{ fontSize: '50px', fontWeight: '700', marginBottom: '5px' }}>1,000<span style={{ fontSize: '30px', verticalAlign: 'super' }}>+</span></h3>
+                        <h4 style={{ fontSize: '18px', fontWeight: '600', marginBottom: '10px' }}>Active Clients</h4>
+                        <p style={{ fontSize: '14px', maxWidth: '200px', margin: '0 auto', opacity: 0.9 }}>We are having active clients worldwide.</p>
                     </div>
                     <div>
-                        <h3 style={{ fontSize: '50px', fontWeight: '700' }}>5000+</h3>
-                        <p style={{ fontSize: '18px' }}>Certifications Issued</p>
+                        <h3 style={{ fontSize: '50px', fontWeight: '700', marginBottom: '5px' }}>100<span style={{ fontSize: '30px', verticalAlign: 'super' }}>%</span></h3>
+                        <h4 style={{ fontSize: '18px', fontWeight: '600', marginBottom: '10px' }}>Clients Satisfied</h4>
+                        <p style={{ fontSize: '14px', maxWidth: '200px', margin: '0 auto', opacity: 0.9 }}>Our client satisfaction ratio is 100%.</p>
                     </div>
                     <div>
-                        <h3 style={{ fontSize: '50px', fontWeight: '700' }}>150+</h3>
-                        <p style={{ fontSize: '18px' }}>Expert Auditors</p>
-                    </div>
-                    <div>
-                        <h3 style={{ fontSize: '50px', fontWeight: '700' }}>100%</h3>
-                        <p style={{ fontSize: '18px' }}>Client Satisfaction</p>
+                        <h3 style={{ fontSize: '50px', fontWeight: '700', marginBottom: '5px' }}>50<span style={{ fontSize: '30px', verticalAlign: 'super' }}>+</span></h3>
+                        <h4 style={{ fontSize: '18px', fontWeight: '600', marginBottom: '10px' }}>Countries</h4>
+                        <p style={{ fontSize: '14px', maxWidth: '200px', margin: '0 auto', opacity: 0.9 }}>We have worldwide network in many countries.</p>
                     </div>
                 </div>
             </section>

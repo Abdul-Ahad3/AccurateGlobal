@@ -175,7 +175,7 @@ body {
 
 /* Footer Styles */
 .footerClass {
-  color: #ccc;
+  color: #000;
   padding-top: 80px;
   font-size: 15px;
 }
@@ -195,7 +195,7 @@ body {
 }
 
 .boxDiv h3 {
-  color: #fff;
+  color: #000;
   margin-bottom: 25px;
   font-size: 20px;
   font-weight: 700;
@@ -204,28 +204,22 @@ body {
 }
 
 .boxDiv h3::after {
-  content: '';
-  position: absolute;
-  left: 0;
-  bottom: 0;
-  width: 40px;
-  height: 3px;
-  background-color: var(--color-secondary-red);
+  content: none;
 }
 
 .boxDiv p {
   line-height: 1.8;
-  color: #bbb;
+  color: #222;
 }
 
 .lists li {
   margin-bottom: 12px;
-  border-bottom: 1px solid rgba(255, 255, 255, 0.05);
+  border-bottom: 1px solid rgba(0, 0, 0, 0.05);
   padding-bottom: 8px;
 }
 
 .lists a {
-  color: #bbb;
+  color: #222;
   text-decoration: none;
   transition: all 0.3s;
   display: block;
@@ -237,13 +231,13 @@ body {
 }
 
 .contact-info dt {
-  color: #fff;
+  color: #000;
   margin-top: 15px;
   font-weight: 600;
 }
 
 .contact-info dd {
-  color: #bbb;
+  color: #222;
   margin-left: 0;
   margin-bottom: 5px;
 }
