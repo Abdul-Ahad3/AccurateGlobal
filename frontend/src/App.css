@@ -1,5 +1,6 @@
 /* Global Defaults */
-html, body {
+html,
+body {
   margin: 0;
   padding: 0;
   font-family: 'Poppins', sans-serif;
@@ -141,6 +142,27 @@ html, body {
 
 .dropdown li:hover a {
   color: var(--color-secondary-red);
+}
+
+/* Nested Dropdown Logic */
+.dropdown li {
+  position: relative;
+  /* Needed for absolute positioning of sub-menu */
+}
+
+/* Sub-dropdown default state */
+.dropdown .sub-dropdown {
+  display: none;
+  position: absolute;
+  left: 100%;
+  top: 0;
+  box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.1);
+  border-top: 3px solid var(--color-secondary-red);
+}
+
+/* Show sub-dropdown on hover of parent li */
+.dropdown li:hover>.sub-dropdown {
+  display: block;
 }
 
 /* Contact Button Override */

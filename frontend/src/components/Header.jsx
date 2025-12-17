@@ -25,7 +25,7 @@ function Header() {
             ACCURATE GLOBAL
           </div>
           <ul className="nav-list">
-            <li className="nav-item"><Link to="/" style={{color: "red"}}>Home</Link></li>
+            <li className="nav-item"><Link to="/" style={{ color: "red" }}>Home</Link></li>
             <li className="nav-item">
               <Link to="/#about">About <i className="fas fa-chevron-down"></i></Link>
               <ul className="dropdown">
@@ -59,13 +59,15 @@ function Header() {
             <li className="nav-item">
               <Link to="#">Services <i className="fas fa-chevron-down"></i></Link>
               <ul className="dropdown">
-                <li><Link to="#">Compliance Certificate  <i className="fas fa-chevron-right"></i></Link></li>
-                <ul className='dropdown'>
-                  <li><Link to="#">CE Marking</Link></li>
-                  <li><Link to="#">HACCP</Link></li>
-                  <li><Link to="#">GMP</Link></li>
-                  <li><Link to="#">RoHS</Link></li>
-                </ul>
+                <li className="nav-item">
+                  <Link to="#">Compliance Certificate  <i className="fas fa-chevron-right"></i></Link>
+                  <ul className='dropdown sub-dropdown'>
+                    <li><Link to="#">CE Marking</Link></li>
+                    <li><Link to="#">HACCP</Link></li>
+                    <li><Link to="#">GMP</Link></li>
+                    <li><Link to="#">RoHS</Link></li>
+                  </ul>
+                </li>
                 <li><Link to="#">Governance Risk & Compliance</Link></li>
               </ul>
             </li>
