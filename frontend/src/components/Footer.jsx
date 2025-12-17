@@ -1,59 +1,63 @@
-import React from 'react';
+import '../App.css'
 import { Link } from 'react-router-dom';
 
-const Footer = () => {
+function Footer() {
     return (
-        <footer style={{ backgroundColor: '#111', color: '#fff', padding: '60px 0 20px' }}>
-            <div className="container">
-                <div style={{ display: 'grid', gridTemplateColumns: 'repeat(auto-fit, minmax(200px, 1fr))', gap: '40px', marginBottom: '40px' }}>
-
-                    {/* About */}
-                    <div>
-                        <h3 style={{ marginBottom: '20px', color: 'var(--color-secondary-red)' }}>AccurateISO</h3>
-                        <p style={{ color: '#aaa', fontSize: '14px' }}>
-                            Accredited ISO Certification and Professional Training services.
-                        </p>
-                    </div>
-
-                    {/* Useful Links */}
-                    <div>
-                        <h4 style={{ marginBottom: '20px' }}>Useful Links</h4>
-                        <ul style={{ listStyle: 'none', padding: 0, fontSize: '14px', color: '#aaa' }}>
-                            <li style={{ marginBottom: '10px' }}><Link to="/useful-links">ISO Certifications</Link></li>
-                            <li style={{ marginBottom: '10px' }}><Link to="/privacy-policy">Privacy Policy</Link></li>
-                            <li style={{ marginBottom: '10px' }}><Link to="/terms-of-use">Terms of Use</Link></li>
-                        </ul>
-                    </div>
-
-                    {/* Tools */}
-                    <div>
-                        <h4 style={{ marginBottom: '20px' }}>Tools</h4>
-                        <ul style={{ listStyle: 'none', padding: 0, fontSize: '14px', color: '#aaa' }}>
-                            <li style={{ marginBottom: '10px' }}><Link to="/certification-verification">Certification Verification</Link></li>
-                            <li style={{ marginBottom: '10px' }}><Link to="/apply-for-certification">Apply For Certification</Link></li>
-                            <li style={{ marginBottom: '10px' }}><Link to="/apply-for-training">Apply For Training</Link></li>
-                            <li style={{ marginBottom: '10px' }}><Link to="/login">Login</Link></li>
-                        </ul>
-                    </div>
-
-                    {/* Contact */}
-                    <div>
-                        <h4 style={{ marginBottom: '20px' }}>Contact Us</h4>
-                        <p style={{ color: '#aaa', fontSize: '14px', marginBottom: '10px' }}>
-                            <strong>Email:</strong> info@accurateiso.com
-                        </p>
-                        <p style={{ color: '#aaa', fontSize: '14px' }}>
-                            <strong>Phone:</strong> +1 872 20000 32
-                        </p>
-                    </div>
+        <div className="footerClass">
+            <div className='fRow'>
+                <div className='boxDiv'>
+                    <h3>About</h3>
+                    <p>Acurate Global Inc. (AGI) is a globally recognized, independent certification body dedicated to enhancing quality, safety, cybersecurity and operational excellence across industries.</p>
                 </div>
+                <div className='boxDiv'>
+                    <h3>ISO Standards</h3>
+                    <ul className='lists'>
+                        <li>ISO 9001:2015</li>
+                        <li>ISO 14001:2015</li>
+                        <li>ISO 45001:2018</li>
+                        <li>ISO/IEC 27001:2022</li>
+                        <li>ISO 50001:2018</li>
+                        <li>ISO 22000:2018</li>
+                        <li>ISO/IEC 20000-1:2018</li>
+                        <li>ISO 37001:2016</li>
+                        <li>ISO 13485:2016</li>
+                        <li>ISO 42001:2023</li>
+                        <li>ISO 22301:2019</li>
+                        <li>ISO/IEC 27701:2019</li>
+                    </ul>
+                </div>
+                <div className='boxDiv'>
+                    <h3>Useful links</h3>
+                    <ul className='lists'>
+                        <li><Link to="/certification-verification">Certification Verification</Link></li>
+                        <li><Link to="/apply-for-certification">Apply for Certification</Link></li>
+                        <li><Link to="/apply-for-training">Apply for Training</Link></li>
+                        <li><Link to="/privacy-policy">Privacy Policy</Link></li>
+                        <li><Link to="/terms-of-use">Terms of Use</Link></li>
+                        <li><Link to="/login">Login</Link></li>
+                    </ul>
+                </div>
+                <div className='boxDiv'>
+                    <h3>Get in Touch</h3>
+                    <dl className='lists'>
+                        <dt>Address:</dt>
+                        <dd>1-Tiffany Pointe, Suite G7 Bloomingdale, Chicago, IL, 60108 United States of America</dd>
 
-                <div style={{ borderTop: '1px solid #333', paddingTop: '20px', textAlign: 'center', fontSize: '14px', color: '#777' }}>
-                    <p>&copy; {new Date().getFullYear()} Accurate Global INC. All rights reserved.</p>
+                        <dt>Phone:</dt>
+                        <dd>+1 872 20000 32</dd>
+
+                        <dt>Email:</dt>
+                        <dd>info@accurateiso.com</dd>
+                    </dl>
                 </div>
             </div>
-        </footer>
-    );
-};
+
+            <div className='fBottom'>
+                All Rights Reserved | Privacy Policy | Terms & Conditions
+            </div>
+
+        </div>
+    )
+}
 
 export default Footer;

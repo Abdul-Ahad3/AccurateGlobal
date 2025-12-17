@@ -1,70 +1,139 @@
-html, body{
-  background-color: rgb(153, 184, 239);
-  font-family: Arial, Helvetica, sans-serif;
-  padding: 0;
+/* Global Defaults */
+html,
+body {
   margin: 0;
+  padding: 0;
+  font-family: 'Poppins', sans-serif;
+  color: #333;
 }
 
-.headerClass{
-
+/* Header Styles */
+.headerClass {
+  width: 100%;
 }
 
-.navbar{
+.titleBar {
+  background-color: #08227A;
+  /* Dark Navy */
+  color: #fff;
+  padding: 15px 0;
   text-align: center;
+  font-size: 28px;
+  font-weight: 700;
+  letter-spacing: 1px;
 }
 
-.navbar ul{
-  font-size: 16px;
+.navbar {
+  background-color: #1E4EC4;
+  /* Primary Blue */
+  padding: 0;
+}
+
+.navbar ul {
   display: flex;
   justify-content: center;
   list-style: none;
-  padding: 0;
   margin: 0;
-  background-color: blue;
+  padding: 0;
+  flex-wrap: wrap;
+}
+
+.navbar li {
+  padding: 0;
+}
+
+.navbar a {
+  display: block;
+  padding: 15px 20px;
   color: white;
-  overflow: hidden;
+  text-decoration: none;
+  font-weight: 500;
+  transition: background-color 0.3s;
 }
 
-.navbar li{
-  float: left;
-  padding: 10px;
-  font-size: larger;
+.navbar a:hover,
+.navbar li:hover {
+  background-color: rgba(255, 255, 255, 0.1);
+  color: #fff;
 }
 
-.navbar li:hover{
-  color: #444;
-}
-
-.footerClass{
-  background-color: white;
-  width: 100%;
-  padding: 0;
-  margin: 0;
-  box-sizing: border-box;
-}
-
-.fRow{
-  display: flex;
-  gap: 24px;
-  padding: 0;
-}
-
-.fBottom{
-  border-top: 1px solid #444;
-  font-size: 50px;
-  text-align: center;
+/* Footer Styles */
+.footerClass {
+  background-color: #111;
+  color: #fff;
+  padding-top: 60px;
   font-size: 14px;
-  padding: 0;
 }
 
-.boxDiv{
-  padding: 20px;
+.fRow {
+  display: flex;
+  flex-wrap: wrap;
+  max-width: 1200px;
+  margin: 0 auto;
+  gap: 30px;
+  padding: 0 20px;
+}
+
+.boxDiv {
   flex: 1;
+  min-width: 250px;
 }
 
-.lists{
+.boxDiv h3 {
+  color: #fff;
+  margin-bottom: 20px;
+  font-size: 18px;
+  border-bottom: 2px solid #F70D31;
+  /* Secondary Red Underline */
+  display: inline-block;
+  padding-bottom: 5px;
+}
+
+.boxDiv p {
+  color: #aaa;
+  line-height: 1.6;
+}
+
+.lists {
   list-style: none;
   padding: 0;
   margin: 0;
 }
 
+.lists li {
+  margin-bottom: 10px;
+}
+
+.lists a {
+  color: #aaa;
+  text-decoration: none;
+  transition: color 0.3s;
+}
+
+.lists a:hover {
+  color: #F70D31;
+  padding-left: 5px;
+  /* Slight movement effect */
+}
+
+/* Contact Definition List */
+.lists dt {
+  font-weight: bold;
+  color: #fff;
+  margin-top: 10px;
+}
+
+.lists dd {
+  margin-left: 0;
+  color: #aaa;
+  margin-bottom: 10px;
+}
+
+.fBottom {
+  background-color: #000;
+  color: #777;
+  text-align: center;
+  padding: 20px 0;
+  margin-top: 40px;
+  border-top: 1px solid #222;
+}
