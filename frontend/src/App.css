@@ -65,6 +65,7 @@ html, body {
 /* Navigation Logic (User Requested) */
 .nav-list {
   display: flex;
+  flex: 1;
   list-style: none;
   padding: 0;
   margin: 0;
@@ -83,7 +84,7 @@ html, body {
 .nav-item a {
   /* Applied styles to main links */
   display: block;
-  padding: 25px 15px;
+  padding: 15px 5px;
   color: white;
   text-decoration: none;
   font-weight: 600;
@@ -146,7 +147,6 @@ html, body {
   left: 100%;
   top: 0;
   box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.1);
-  border-top: 3px solid var(--color-secondary-red);
 }
 
 /* Show sub-dropdown on hover of parent li */

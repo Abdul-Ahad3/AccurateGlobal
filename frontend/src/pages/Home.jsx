@@ -5,6 +5,7 @@ const Home = () => {
         <>
             {/* Hero Section */}
             <section style={{
+                height: '150vh',
                 backgroundImage: 'url(https://accurateiso.com/wp-content/uploads/2025/10/Hero-Section-Home-page-Image-1.jpg)',
                 backgroundSize: 'cover',
                 backgroundPosition: 'center',
@@ -23,22 +24,17 @@ const Home = () => {
             </section>
 
             {/* Services Summary Cards - Floating overlap */}
-            <section style={{ marginTop: '-80px', position: 'relative', zIndex: 3, paddingBottom: '60px' }}>
+            <section style={{ marginTop: '-140px', position: 'relative', zIndex: 3, paddingBottom: '60px' }}>
+                <hr style={{ marginTop: '1px', color: '#2f3137ff' }} />
                 <div className="container" style={{ display: 'grid', gridTemplateColumns: 'repeat(auto-fit, minmax(300px, 1fr))', gap: '30px' }}>
-                    <div style={{ padding: '40px', backgroundColor: 'white', boxShadow: '0 10px 30px rgba(0,0,0,0.1)', borderRadius: '4px', borderBottom: '3px solid var(--color-secondary-red)' }}>
-                        <h3 style={{ marginBottom: '15px', color: '#000' }}>Certification Services</h3>
-                        <p style={{ color: '#666' }}>We provide comprehensive ISO certification services tailored to your industry needs.</p>
-                        <a href="#" style={{ color: 'var(--color-secondary-red)', fontWeight: '600', marginTop: '15px', display: 'inline-block' }}>READ MORE &raquo;</a>
+                    <div style={{ padding: '40px', boxShadow: '0 10px 30px rgba(0,0,0,0.1)', borderRadius: '4px'}}>
+                        <h3 style={{ marginBottom: '15px', color: 'white' }}>Certification Services</h3>
                     </div>
-                    <div style={{ padding: '40px', backgroundColor: 'var(--color-primary-blue)', color: 'white', boxShadow: '0 10px 30px rgba(0,0,0,0.1)', borderRadius: '4px' }}>
-                        <h3 style={{ marginBottom: '15px', color: 'white' }}>Professional Training</h3>
-                        <p style={{ color: '#eee' }}>Elevate your skills with our expert-led professional training programs.</p>
-                        <a href="#" style={{ color: 'white', fontWeight: '600', marginTop: '15px', display: 'inline-block' }}>READ MORE &raquo;</a>
+                    <div style={{ padding: '40px', color: 'white', boxShadow: '0 10px 30px rgba(0,0,0,0.1)', borderRadius: '4px' }}>
+                        <h3 style={{ marginBottom: '15px', color: 'white' }}>Governance, Risk & Compliance</h3>
                     </div>
-                    <div style={{ padding: '40px', backgroundColor: 'white', boxShadow: '0 10px 30px rgba(0,0,0,0.1)', borderRadius: '4px', borderBottom: '3px solid var(--color-secondary-red)' }}>
-                        <h3 style={{ marginBottom: '15px', color: '#000' }}>Governance, Risk & Compliance</h3>
-                        <p style={{ color: '#666' }}>Manage risk and ensure compliance with our GRC solutions.</p>
-                        <a href="#" style={{ color: 'var(--color-secondary-red)', fontWeight: '600', marginTop: '15px', display: 'inline-block' }}>READ MORE &raquo;</a>
+                    <div style={{ padding: '40px', boxShadow: '0 10px 30px rgba(0,0,0,0.1)', borderRadius: '4px'}}>
+                        <h3 style={{ marginBottom: '15px', color: 'white' }}>Training & Development for Individuals and Organizations</h3>
                     </div>
                 </div>
             </section>

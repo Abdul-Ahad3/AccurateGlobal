@@ -7,6 +7,9 @@ function Header() {
       {/* Top Bar */}
       <div className='topBar'>
         <div className="container" style={{ display: 'flex', justifyContent: 'space-between', alignItems: 'center' }}>
+          <div className="logo">
+            ACCURATE GLOBAL
+          </div>
           <div className="contactInfo">
             <span><i className="fas fa-phone"></i> +1 872 20000 32</span>
             <span><i className="fas fa-envelope"></i> info@accurateiso.com</span>
@@ -21,13 +24,10 @@ function Header() {
       {/* Navigation */}
       <nav className='navbar'>
         <div className="container" style={{ display: 'flex', justifyContent: 'space-between', alignItems: 'center' }}>
-          <div className="logo">
-            ACCURATE GLOBAL
-          </div>
           <ul className="nav-list">
             <li className="nav-item"><Link to="/" style={{ color: "red" }}>Home</Link></li>
             <li className="nav-item">
-              <Link to="/#about">About <i className="fas fa-chevron-down"></i></Link>
+              <Link to="/#about">About  <i className="fas fa-chevron-down" /></Link>
               <ul className="dropdown">
                 <li><Link to="#">Introduction</Link></li>
                 <li><Link to="#">Accreditation</Link></li>
@@ -40,7 +40,7 @@ function Header() {
               </ul>
             </li>
             <li className="nav-item">
-              <Link to="/useful-links">ISO Certifications <i className="fas fa-chevron-down"></i></Link>
+              <Link to="/useful-links">ISO Certifications  <i className="fas fa-chevron-down" /></Link>
               <ul className="dropdown">
                 <li><Link to="#">ISO 9001:2015</Link></li>
                 <li><Link to="#">ISO 14001:2015</Link></li>
@@ -57,10 +57,10 @@ function Header() {
               </ul>
             </li>
             <li className="nav-item">
-              <Link to="#">Services <i className="fas fa-chevron-down"></i></Link>
+              <Link to="#">Services  <i className="fas fa-chevron-down"></i></Link>
               <ul className="dropdown">
                 <li className="nav-item">
-                  <Link to="#">Compliance Certificate  <i className="fas fa-chevron-right"></i></Link>
+                  <Link to="#">Compliance Certificate  <i className="fas fa-chevron-right" /></Link>
                   <ul className='dropdown sub-dropdown'>
                     <li><Link to="#">CE Marking</Link></li>
                     <li><Link to="#">HACCP</Link></li>
@@ -73,7 +73,7 @@ function Header() {
             </li>
             <li className="nav-item"><Link to="/apply-for-training">Training</Link></li>
             <li className="nav-item">
-              <Link to="#">Customers <i className="fas fa-chevron-down"></i></Link>
+              <Link to="#">Customers  <i className="fas fa-chevron-down" /></Link>
               <ul className="dropdown">
                 <li><Link to="/certification-verification">Certification Verification</Link></li>
                 <li><Link to="/apply-for-certification">Apply For Certification</Link></li>
@@ -82,7 +82,7 @@ function Header() {
             </li>
             <li className="nav-item"><Link to="#">Work with us</Link></li>
             <li className="nav-item"><Link to="#">Blog</Link></li>
-            <li className="nav-item"><Link to="/#contact" className="btn-contact">Contact</Link></li>
+            <li className="nav-item"><Link to="/#contact" className="btn-contact" style={{backgroundColor: "var(--color-secondary-red)", color: "white"}}>Contact  <i className="fas fa-chevron-right" /></Link></li>
           </ul>
         </div>
       </nav>
