@@ -3,7 +3,7 @@ import { Link } from 'react-router-dom';
 
 function Footer() {
     return (
-        <div className="footerClass">
+        <div className="footerClass" style={{ backgroundImage: 'url(https://accurateiso.com/wp-content/uploads/2025/04/footer-bg.webp)', backgroundSize: 'cover', backgroundPosition: 'center', backgroundColor: '#000' }}>
             <div className='fRow'>
                 <div className='boxDiv'>
                     <h3>About</h3>
@@ -39,7 +39,7 @@ function Footer() {
                 </div>
                 <div className='boxDiv'>
                     <h3>Get in Touch</h3>
-                    <dl className='lists'>
+                    <dl className='lists contact-info'>
                         <dt>Address:</dt>
                         <dd>1-Tiffany Pointe, Suite G7 Bloomingdale, Chicago, IL, 60108 United States of America</dd>
 
@@ -53,7 +53,7 @@ function Footer() {
             </div>
 
             <div className='fBottom'>
-                All Rights Reserved | Privacy Policy | Terms & Conditions
+                All Rights Reserved | <Link to="/privacy-policy">Privacy Policy</Link> | <Link to="/terms-of-use">Terms & Conditions</Link>
             </div>
 
         </div>
