@@ -1,0 +1,78 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap');
+
+:root {
+  --color-primary-blue: #1E4EC4;
+  --color-secondary-red: #F70D31;
+  --color-dark-navy: #08227A;
+  --color-text-white: #FFFFFF;
+  --color-text-gray: #A5AEC2;
+  --color-bg-light: #F9FAFC; /* Guessing a light background for contrast */
+  
+  --font-main: 'Poppins', sans-serif;
+}
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: var(--font-main);
+  background-color: white;
+  color: #333;
+  line-height: 1.6;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-weight: 600;
+  line-height: 1.2;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+/* Utility Classes for Button Styles */
+.btn {
+  display: inline-block;
+  padding: 12px 24px;
+  font-weight: 500;
+  border-radius: 4px; /* Slight radius */
+  cursor: pointer;
+  transition: all 0.3s ease;
+  border: none;
+  font-family: var(--font-main);
+  font-size: 16px;
+}
+
+.btn-primary {
+  background-color: var(--color-secondary-red);
+  color: var(--color-text-white);
+}
+
+.btn-primary:hover {
+  background-color: #d60b2a;
+}
+
+.btn-secondary {
+  background-color: var(--color-primary-blue);
+  color: var(--color-text-white);
+}
+
+.btn-secondary:hover {
+  background-color: #163d9c;
+}
+
+/* Container */
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 15px;
+}
+
+/* Section Padding */
+.section-padding {
+  padding: 60px 0;
+}
