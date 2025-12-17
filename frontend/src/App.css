@@ -1,6 +1,5 @@
 /* Global Defaults */
-html,
-body {
+html, body {
   margin: 0;
   padding: 0;
   font-family: 'Poppins', sans-serif;
@@ -15,11 +14,10 @@ body {
 
 /* Top Bar */
 .topBar {
-  background-color: #0d0d0d;
-  color: #ccc;
+  background-color: white;
+  color: var(--color-dark-navy);
   padding: 10px 0;
   font-size: 13px;
-  border-bottom: 1px solid #222;
 }
 
 .contactInfo span {
@@ -27,7 +25,7 @@ body {
 }
 
 .contactInfo i {
-  color: var(--color-secondary-red);
+  color: var(--color-dark-navy);
   margin-right: 5px;
 }
 
@@ -103,7 +101,7 @@ body {
   top: 100%;
   /* just below parent */
   left: 0;
-  background: #fff;
+  background: #325EC9;
   list-style: none;
   padding: 10px 0;
   margin: 0;
@@ -111,7 +109,6 @@ body {
   min-width: 220px;
   /* Adjusted to 220px to match previous design preference */
   z-index: 1000;
-  border-top: 3px solid var(--color-secondary-red);
   /* Preserved refined styling */
 }
 
@@ -130,19 +127,11 @@ body {
   display: block;
   padding: 10px 20px;
   font-size: 13px;
-  border-bottom: 1px solid #eee;
   text-transform: capitalize;
-  color: #555;
+  color: white;
   white-space: nowrap;
 }
 
-.dropdown li:hover {
-  background-color: #f9f9f9;
-}
-
-.dropdown li:hover a {
-  color: var(--color-secondary-red);
-}
 
 /* Nested Dropdown Logic */
 .dropdown li {
@@ -161,13 +150,12 @@ body {
 }
 
 /* Show sub-dropdown on hover of parent li */
-.dropdown li:hover>.sub-dropdown {
+.dropdown:hover .sub-dropdown {
   display: block;
 }
 
 /* Contact Button Override */
 .nav-item .btn-contact {
-  background-color: var(--color-secondary-red);
   color: white !important;
   padding: 10px 25px !important;
   border-radius: 4px;
@@ -251,6 +239,10 @@ body {
   color: #222;
 }
 
+
+.lists {
+  list-style: none;
+}
 .lists li {
   margin-bottom: 12px;
   border-bottom: 1px solid rgba(0, 0, 0, 0.05);

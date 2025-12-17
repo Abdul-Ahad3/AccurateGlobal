@@ -16,7 +16,7 @@ const Home = () => {
                 <div className="container" style={{ position: 'relative', zIndex: 2, textAlign: 'center' }}>
                     <h1 style={{ fontSize: '56px', marginBottom: '20px', fontWeight: '700', lineHeight: '1.2' }}>Accredited ISO Certification and<br />Professional Training!</h1>
                     <p style={{ fontSize: '24px', marginBottom: '40px', fontWeight: '300' }}>
-                        Free Consultation
+                        Delivering Excellence through Internationally Accredited Management System
                     </p>
                     <button className="btn btn-primary" style={{ fontSize: '18px', padding: '15px 40px' }}>Book Appointment</button>
                 </div>

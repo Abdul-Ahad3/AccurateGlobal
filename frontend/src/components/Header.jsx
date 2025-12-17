@@ -8,8 +8,8 @@ function Header() {
       <div className='topBar'>
         <div className="container" style={{ display: 'flex', justifyContent: 'space-between', alignItems: 'center' }}>
           <div className="contactInfo">
-            <span><i className="fas fa-envelope"></i> info@accurateiso.com</span>
             <span><i className="fas fa-phone"></i> +1 872 20000 32</span>
+            <span><i className="fas fa-envelope"></i> info@accurateiso.com</span>
           </div>
           <div className="socialIcons">
             <i className="fab fa-facebook-f"></i>
