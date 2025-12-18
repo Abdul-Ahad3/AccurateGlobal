@@ -1,7 +1,11 @@
 import '../App.css'
 import { Link } from 'react-router-dom';
+import { useState } from 'react';
 
 function Header() {
+  const [isOpen, setIsOpen] = useState(false);
+  const toggleMenu = () => setIsOpen(!isOpen);
+
   return (
     <div className="headerClass">
       {/* Top Bar */}
@@ -24,7 +28,12 @@ function Header() {
       {/* Navigation */}
       <nav className='navbar'>
         <div className="container" style={{ display: 'flex', justifyContent: 'space-between', alignItems: 'center' }}>
-          <ul className="nav-list">
+
+          <div className="menu-icon" onClick={toggleMenu}>
+            <i className={isOpen ? "fas fa-times" : "fas fa-bars"}></i>
+          </div>
+
+          <ul className={isOpen ? "nav-list active" : "nav-list"}>
             <li className="nav-item"><Link to="/" style={{ color: "red" }}>Home</Link></li>
             <li className="nav-item">
               <Link to="/#about">About  <i className="fas fa-chevron-down" /></Link>
@@ -82,7 +91,7 @@ function Header() {
             </li>
             <li className="nav-item"><Link to="#">Work with us</Link></li>
             <li className="nav-item"><Link to="#">Blog</Link></li>
-            <li className="nav-item"><Link to="/#contact" className="btn-contact" style={{backgroundColor: "var(--color-secondary-red)", color: "white"}}>Contact  <i className="fas fa-chevron-right" /></Link></li>
+            <li className="nav-item"><Link to="/#contact" className="btn-contact" style={{ backgroundColor: "var(--color-secondary-red)", color: "white" }}>Contact  <i className="fas fa-chevron-right" /></Link></li>
           </ul>
         </div>
       </nav>

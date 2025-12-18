@@ -1,9 +1,17 @@
 /* Global Defaults */
-html, body {
+html,
+body {
   margin: 0;
   padding: 0;
   font-family: 'Poppins', sans-serif;
   color: #333;
+  overflow-x: hidden;
+  /* Prevent horizontal scroll */
+}
+
+img {
+  max-width: 100%;
+  height: auto;
 }
 
 :root {
@@ -237,6 +245,7 @@ html, body {
 .lists {
   list-style: none;
 }
+
 .lists li {
   margin-bottom: 12px;
   border-bottom: 1px solid rgba(0, 0, 0, 0.05);
@@ -294,4 +303,118 @@ html, body {
 
 .section-padding {
   padding: 100px 0;
+}
+
+/* Menu Icon */
+.menu-icon {
+  display: none;
+  color: white;
+  font-size: 28px;
+  cursor: pointer;
+  padding: 10px;
+}
+
+/* Mission Section Layout */
+.mission-content {
+  display: flex;
+  gap: 40px;
+  align-items: stretch;
+}
+
+/* Responsive Utilities */
+.d-none {
+  display: none !important;
+}
+
+@media (min-width: 992px) {
+  .d-lg-block {
+    display: block !important;
+  }
+}
+
+/* Mobile Adjustments */
+@media (max-width: 768px) {
+  .section-padding {
+    padding: 50px 0;
+  }
+
+  .hero-section {
+    padding: 100px 0 !important;
+    background-position: left center !important;
+  }
+
+  h3 {
+    font-size: 32px !important;
+  }
+
+  h2 {
+    font-size: 28px !important;
+  }
+
+  /* Mobile Navigation */
+  .menu-icon {
+    display: block;
+  }
+
+  .nav-list {
+    display: none;
+    flex-direction: column;
+    width: 100%;
+    position: absolute;
+    top: 100%;
+    left: 0;
+    background-color: #0A2A66;
+    /* Same as navbar bg */
+    padding: 20px;
+    align-items: flex-start;
+    /* Left align items */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    z-index: 999;
+  }
+
+  .nav-list.active {
+    display: flex;
+  }
+
+  .nav-item {
+    width: 100%;
+    text-align: left;
+    padding: 10px 0;
+  }
+
+  .dropdown {
+    position: static;
+    box-shadow: none;
+    background-color: transparent;
+    display: none;
+    width: 100%;
+    min-width: unset;
+  }
+
+  .nav-item:hover .dropdown {
+    display: block;
+    background-color: rgba(255, 255, 255, 0.05);
+  }
+
+  .dropdown li a {
+    padding-left: 15px;
+    /* Slight indent for hierarchy */
+    text-align: left;
+  }
+
+  .navbar .container {
+    flex-direction: row;
+    flex-wrap: wrap;
+  }
+
+  .logo {
+    flex: 1;
+    text-align: left;
+    padding: 15px 0;
+  }
+
+  /* Mission Section Mobile Swap */
+  .mission-content {
+    flex-direction: column-reverse;
+  }
 }

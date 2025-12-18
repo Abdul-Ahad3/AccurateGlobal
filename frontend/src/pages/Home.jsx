@@ -4,7 +4,7 @@ const Home = () => {
     return (
         <>
             {/* Hero Section */}
-            <section style={{
+            <section className="hero-section" style={{
                 backgroundImage: 'url(https://accurateiso.com/wp-content/uploads/2025/10/Hero-Section-Home-page-Image-1.jpg)',
                 backgroundSize: '200% auto',
                 backgroundPosition: 'center',
@@ -187,8 +187,7 @@ const Home = () => {
                         </div>
 
                         {/* Center Image */}
-                        <div style={{ width: '300px', borderRadius: '8px', overflow: 'hidden', display: 'none', '@media (min-width: 992px)': { display: 'block' } }} className="d-none d-lg-block">
-                            {/* Note: using d-none d-lg-block class if available, else style text. Assuming standard simple structure for now, user can refined responsive later. I will just style it normally. */}
+                        <div style={{ width: '100%', maxWidth: '300px', borderRadius: '8px', overflow: 'hidden', margin: '20px auto' }}>
                             <img src="https://images.unsplash.com/photo-1585155967849-91c736589c84?q=80&w=327&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="Statue of Liberty" style={{ width: '100%', height: '100%', objectFit: 'cover' }} />
                         </div>
 
@@ -299,7 +298,7 @@ const Home = () => {
 
                         <div style={{ flex: 1 }}>
                             <h2 style={{ color: '#08227A', fontSize: '32px', marginBottom: '30px', textAlign: 'center' }}>Why Accurate Global?</h2>
-                            <div style={{ display: 'flex', gap: '40px', alignItems: 'stretch' }}>
+                            <div className="mission-content">
                                 {/* Image Left */}
                                 <div style={{ flex: 1, minWidth: '300px', borderRadius: '8px', overflow: 'hidden', boxShadow: '0 10px 30px rgba(0,0,0,0.1)' }}>
                                     <img src="https://images.unsplash.com/photo-1556761175-5973dc0f32e7?ixlib=rb-1.2.1&auto=format&fit=crop&w=1600&q=80" alt="Why Choose Us" style={{ width: '100%', height: '100%', objectFit: 'cover' }} />
