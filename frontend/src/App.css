@@ -268,21 +268,21 @@ html, body {
 }
 
 .fBottom {
-  background-color: #050505;
-  color: #777;
+  background-color: var(--color-dark-navy);
+  color: white;
   text-align: center;
   padding: 25px 0;
   margin-top: 60px;
-  font-size: 14px;
+  font-size: 18px;
 }
 
 .fBottom a {
-  color: #777;
+  color: red;
   margin: 0 5px;
 }
 
 .fBottom a:hover {
-  color: white;
+  color: rgb(28, 23, 23);
 }
 
 /* Utilities */

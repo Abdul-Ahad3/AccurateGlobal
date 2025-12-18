@@ -53,7 +53,7 @@ function Footer() {
             </div>
 
             <div className='fBottom'>
-                All Rights Reserved | <Link to="/privacy-policy">Privacy Policy</Link> | <Link to="/terms-of-use">Terms & Conditions</Link>
+                <i className="far fa-copyright" /> All Rights Reserved | <Link to="/privacy-policy">Privacy Policy</Link> | <Link to="/terms-of-use">Terms & Conditions</Link>
             </div>
 
         </div>

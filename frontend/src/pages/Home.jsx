@@ -17,7 +17,7 @@ const Home = () => {
                     <div style={{ display: 'flex', flexWrap: 'wrap', alignItems: 'center', gap: '40px' }}>
                         {/* Left Column: Text & Buttons */}
                         <div style={{ flex: '1', minWidth: '300px', textAlign: 'left' }}>
-                            <h1 style={{ fontSize: '48px', marginBottom: '20px', fontWeight: '700', lineHeight: '1.2' }}>Accredited ISO Certification and<br />Professional Training!</h1>
+                            <h1 style={{ fontSize: '48px', marginBottom: '20px', fontWeight: '700', lineHeight: '1.2' }}>Accredited ISO<br />Certification and Professional<br />Training!</h1>
                             <p style={{ fontSize: '24px', marginBottom: '30px', fontWeight: '300' }}>
                                 Delivering Excellence through Internationally Accredited Management System
                             </p>
@@ -68,7 +68,7 @@ const Home = () => {
             </section>
 
             {/* 1. Services Banner */}
-            <section style={{ backgroundColor: '#0A2A66', padding: '50px 0', color: 'white' }}>
+            <section style={{ backgroundColor: 'black', padding: '50px 0', color: 'white' }}>
                 <div className="container" style={{ display: 'flex', justifyContent: 'space-around', flexWrap: 'wrap', gap: '30px', textAlign: 'center' }}>
                     <div style={{ maxWidth: '300px' }}>
                         <i className="fas fa-certificate" style={{ fontSize: '40px', marginBottom: '15px', color: '#fff' }}></i>
@@ -91,37 +91,25 @@ const Home = () => {
                     <div style={{ display: 'flex', gap: '50px', flexWrap: 'wrap' }}>
                         {/* Left: Text & Highlights */}
                         <div style={{ flex: 1, minWidth: '300px' }}>
-                            <h4 style={{ color: 'var(--color-secondary-red)', fontWeight: '600', letterSpacing: '1px', marginBottom: '10px' }}>WELCOME TO ACCURATE GLOBAL INC</h4>
-                            <h2 style={{ color: '#08227A', fontSize: '36px', marginBottom: '25px', lineHeight: '1.3' }}>Driving Excellence with International Certifications</h2>
-                            <p style={{ marginBottom: '30px', color: '#555', lineHeight: '1.7' }}>
-                                Accurate Global INC is a leading provider of management system certification and training. We are committed to adding value to your business through our expert auditing and training services.
+                            <h2 style={{ fontWeight: '600', letterSpacing: '1px', marginBottom: '10px' }}>Welcome To Accurate Global INC</h2>
+                            <p style={{ marginBottom: '30px', color: '#787777ff', lineHeight: '1.7', fontWeight: 'bold' }}>
+                                Driving Excellence with International Certifications
                             </p>
-                            <div style={{ display: 'grid', gridTemplateColumns: '1fr 1fr', gap: '20px' }}>
-                                <div style={{ display: 'flex', alignItems: 'center', gap: '10px' }}>
-                                    <i className="fas fa-check-circle" style={{ color: 'var(--color-secondary-red)', fontSize: '20px' }}></i>
-                                    <span style={{ fontWeight: '600', color: '#333' }}>14 Years Experience</span>
-                                </div>
-                                <div style={{ display: 'flex', alignItems: 'center', gap: '10px' }}>
-                                    <i className="fas fa-users" style={{ color: 'var(--color-secondary-red)', fontSize: '20px' }}></i>
-                                    <span style={{ fontWeight: '600', color: '#333' }}>150+ Expert Auditors</span>
-                                </div>
-                                <div style={{ display: 'flex', alignItems: 'center', gap: '10px' }}>
-                                    <i className="fas fa-globe" style={{ color: 'var(--color-secondary-red)', fontSize: '20px' }}></i>
-                                    <span style={{ fontWeight: '600', color: '#333' }}>50+ Countries</span>
-                                </div>
-                                <div style={{ display: 'flex', alignItems: 'center', gap: '10px' }}>
-                                    <i className="fas fa-smile" style={{ color: 'var(--color-secondary-red)', fontSize: '20px' }}></i>
-                                    <span style={{ fontWeight: '600', color: '#333' }}>1000+ Clients</span>
-                                </div>
-                            </div>
+                            <ul>
+                                <li>14 Years of Industry Experience</li>
+                                <li>A Team of 150+ Expert Auditors</li>
+                                <li>Global Presence in Over 50+ Countries</li>
+                                <li>Trusted by 1000+ Clients Worldwide</li>
+                                <li>Accredited for management system certification in accordance of ISO 17021</li>
+                            </ul>
                         </div>
                         {/* Right: Cards */}
-                        <div style={{ flex: 1, minWidth: '300px', display: 'flex', flexDirection: 'column', gap: '20px' }}>
-                            <div style={{ padding: '30px', backgroundColor: '#f9f9f9', borderLeft: '5px solid var(--color-primary-blue)' }}>
+                        <div style={{ flex: 1, minWidth: '300px', display: 'flex', flexDirection: 'row', gap: '20px' }}>
+                            <div style={{ padding: '30px', backgroundColor: '#f9f9f9' }}>
                                 <h4 style={{ fontSize: '20px', color: '#08227A', marginBottom: '10px' }}>ISO Certification</h4>
                                 <p style={{ color: '#666', fontSize: '14px' }}>Accurate Global is Certification body offering renowned worldwide ISO Certification services.</p>
                             </div>
-                            <div style={{ padding: '30px', backgroundColor: '#f9f9f9', borderLeft: '5px solid var(--color-secondary-red)' }}>
+                            <div style={{ padding: '30px', backgroundColor: '#f9f9f9' }}>
                                 <h4 style={{ fontSize: '20px', color: '#08227A', marginBottom: '10px' }}>Training & Development</h4>
                                 <p style={{ color: '#666', fontSize: '14px' }}>Accurate Global provides leading training and development programs.</p>
                             </div>
@@ -160,22 +148,62 @@ const Home = () => {
             </section>
 
             {/* 4. Certification Process */}
-            <section className="section-padding" style={{
-                backgroundImage: 'url(https://accurateiso.com/wp-content/uploads/2025/04/bg01.jpg)', // Using dark bg from analysis 
-                backgroundSize: 'cover',
-                color: 'white'
-            }}>
-                <div className="container" style={{ textAlign: 'center' }}>
-                    <h2 style={{ fontSize: '30px', marginBottom: '50px', maxWidth: '800px', margin: '0 auto 50px' }}>We begin with identifying and understanding the client’s needs and expectations.</h2>
+            <section className="section-padding" style={{ padding: '60px 0', backgroundColor: '#08227A', color: 'white' }}>
+                <div className="container">
+                    <h2 style={{ fontSize: '30px', marginBottom: '50px', maxWidth: '800px', margin: '0 auto 50px' }}>We begin with identifying and understanding the client’s needs and expectations. This includes:</h2>
+                    <button className="btn btn-primary" style={{ marginBottom: '50px' }}>Our Certifications <i className="fas fa-chevron-right" /></button>
                     <div style={{ display: 'flex', justifyContent: 'center', gap: '20px', flexWrap: 'wrap' }}>
-                        {['Customer Understanding', 'Stage-1 Audit', 'Assessing', 'Stage-2 Audit', 'Continued Evaluation'].map((step, index) => (
-                            <div key={index} style={{ flex: '1', minWidth: '150px', maxWidth: '200px' }}>
-                                <div style={{ width: '60px', height: '60px', borderRadius: '50%', border: '2px solid white', margin: '0 auto 15px', display: 'flex', alignItems: 'center', justifyContent: 'center', fontWeight: '700', fontSize: '20px' }}>{index + 1}</div>
-                                <h4 style={{ fontSize: '16px' }}>{step}</h4>
-                            </div>
-                        ))}
+                        <div style={{ flex: '1', minWidth: '150px', maxWidth: '200px' }}>
+                            <h4 style={{ fontSize: '16px' }}>Customer Understanding</h4>
+                            <p>
+                                We begin by identifying and understanding the client’s needs and expectations. This includes:
+                                <ul>
+                                    <li>Collecting initial information</li>
+                                    <li>Understanding the the Standards Requirement for Certification</li>
+                                    <li>Presenting an audit and certification proposal</li>
+                                    <li>Defining a clear roadmap toward excellence</li>
+                                </ul>
+                            </p>
+                        </div>
+                        
+                        <div style={{ flex: '1', minWidth: '150px', maxWidth: '200px' }}>
+                            <h4 style={{ fontSize: '16px' }}>Stage-2 Audit</h4>
+                            <p>
+                                The certification process involves:
+                                <ul>
+                                    <li>Auditing the implementation of the management system.</li>
+                                    <li>Submitting a detailed report highlighting non-conformities and areas for improvement.</li>
+                                    <li>Verifying the effectiveness of the closures of non-conformities.</li>
+                                    <li>Verifying the organization commitment to continual improvement.</li>
+                                    <li>Awarding the Management System – the certification.</li>
+                                </ul>
+                            </p>
+                        </div>
+                        
+                        <div style={{ flex: '1', minWidth: '150px', maxWidth: '200px' }}>
+                            <h4 style={{ fontSize: '16px' }}>Stage-1 Audit</h4>
+                            <p>
+                                We evaluate the maturity of the management system to ensure alignment with international standards. This stage includes:
+                                <ul>
+                                    <li>Assessing the current system’s maturity level.</li>
+                                    <li>Verification of the Legal Documents and Structure of the organization.</li>
+                                    <li>Assessment of the Infrstructure and Management System Documentation.</li>
+                                    <li>Submitting a report to measure progress against expected benchmarks and Gaps.</li>
+                                </ul>
+                            </p>
+                        </div>
+                        
+                        <div style={{ flex: '1', minWidth: '150px', maxWidth: '200px' }}>
+                            <h4 style={{ fontSize: '16px' }}>Continued Evaluation</h4>
+                            <p>
+                                To maintain and improve certification standards, we carry out:
+                                <ul>
+                                    <li>Ongoing evaluation through surveillance and re-assessment audits.</li>
+                                    <li>Ensuring the management system remains mature and capable of continual improvement.</li>
+                                </ul>
+                            </p>
+                        </div>
                     </div>
-                    <button className="btn btn-primary" style={{ marginTop: '50px' }}>Our Certifications</button>
                 </div>
             </section>
 
@@ -183,17 +211,17 @@ const Home = () => {
             <section style={{ backgroundColor: '#f4f4f4', padding: '60px 0' }}>
                 <div className="container" style={{ display: 'flex', justifyContent: 'space-around', flexWrap: 'wrap', gap: '30px', textAlign: 'center', color: '#333' }}>
                     <div>
-                        <h3 style={{ fontSize: '40px', fontWeight: '700', marginBottom: '5px', color: '#08227A' }}>1,000<span style={{ fontSize: '24px', verticalAlign: 'super' }}>+</span></h3>
+                        <h3 style={{ fontSize: '40px', fontWeight: '700', marginBottom: '5px', color: '#08227A' }}>1,000+</h3>
                         <h4 style={{ fontSize: '16px', fontWeight: '600', marginBottom: '5px' }}>Active Clients</h4>
                         <p style={{ fontSize: '13px', color: '#666', maxWidth: '200px', margin: '0 auto' }}>We are having active clients worldwide.</p>
                     </div>
                     <div>
-                        <h3 style={{ fontSize: '40px', fontWeight: '700', marginBottom: '5px', color: '#08227A' }}>100<span style={{ fontSize: '24px', verticalAlign: 'super' }}>%</span></h3>
+                        <h3 style={{ fontSize: '40px', fontWeight: '700', marginBottom: '5px', color: '#08227A' }}>100%</h3>
                         <h4 style={{ fontSize: '16px', fontWeight: '600', marginBottom: '5px' }}>Clients Satisfied</h4>
                         <p style={{ fontSize: '13px', color: '#666', maxWidth: '200px', margin: '0 auto' }}>Our client satisfaction ratio is 100%.</p>
                     </div>
                     <div>
-                        <h3 style={{ fontSize: '40px', fontWeight: '700', marginBottom: '5px', color: '#08227A' }}>50<span style={{ fontSize: '24px', verticalAlign: 'super' }}>+</span></h3>
+                        <h3 style={{ fontSize: '40px', fontWeight: '700', marginBottom: '5px', color: '#08227A' }}>50+</h3>
                         <h4 style={{ fontSize: '16px', fontWeight: '600', marginBottom: '5px' }}>Countries</h4>
                         <p style={{ fontSize: '13px', color: '#666', maxWidth: '200px', margin: '0 auto' }}>We have worldwide network in many countries.</p>
                     </div>
@@ -205,14 +233,19 @@ const Home = () => {
                 <div className="container" style={{ textAlign: 'center' }}>
                     <h2 style={{ color: '#08227A', fontSize: '36px', marginBottom: '50px' }}>What Our Clients Say</h2>
                     <div style={{ display: 'flex', gap: '30px', justifyContent: 'center', flexWrap: 'wrap' }}>
-                        {[1, 2, 3].map(i => (
-                            <div key={i} style={{ flex: 1, minWidth: '300px', padding: '30px', boxShadow: '0 5px 20px rgba(0,0,0,0.05)', borderRadius: '8px', backgroundColor: 'white', textAlign: 'left' }}>
-                                <div style={{ color: '#FFD700', marginBottom: '15px' }}><i className="fas fa-star"></i><i className="fas fa-star"></i><i className="fas fa-star"></i><i className="fas fa-star"></i><i className="fas fa-star"></i></div>
-                                <p style={{ fontStyle: 'italic', color: '#555', marginBottom: '20px' }}>"The service was exceptional and professional. Highly recommended for ISO certification."</p>
-                                <h4 style={{ color: '#333', fontSize: '16px', fontWeight: '700' }}>Client Name</h4>
-                                <span style={{ fontSize: '14px', color: '#888' }}>Company Ltd.</span>
-                            </div>
-                        ))}
+                        <div style={{ flex: 1, minWidth: '300px', padding: '30px', boxShadow: '0 5px 20px rgba(0,0,0,0.05)', borderRadius: '8px', backgroundColor: 'white', textAlign: 'left' }}>
+                            <div style={{ color: '#FFD700', marginBottom: '15px' }}><i className="fas fa-star"></i><i className="fas fa-star"></i><i className="fas fa-star"></i><i className="fas fa-star"></i><i className="fas fa-star"></i></div>
+                            <h4 style={{ color: '#333', fontSize: '16px', fontWeight: '700' }}>Paul Elenjikel</h4>
+                            <span style={{ fontSize: '14px', color: '#888' }}>(CBD Chicago INC)</span>
+                            <p style={{ fontStyle: 'italic', color: '#555', marginBottom: '20px' }}>“Accurate ISO made our ISO certification process seamless and stress-free. Their team was incredibly knowledgeable, guiding us through every step with clarity and professionalism. We were impressed by how responsive and supportive they were throughout the entire journey. Thanks to Accurate ISO, we not only achieved certification quickly but also gained valuable insights to improve our internal processes.”</p>
+                        </div>
+
+                        <div style={{ flex: 1, minWidth: '300px', padding: '30px', boxShadow: '0 5px 20px rgba(0,0,0,0.05)', borderRadius: '8px', backgroundColor: 'white', textAlign: 'left' }}>
+                            <div style={{ color: '#FFD700', marginBottom: '15px' }}><i className="fas fa-star"></i><i className="fas fa-star"></i><i className="fas fa-star"></i><i className="fas fa-star"></i><i className="fas fa-star"></i></div>
+                            <h4 style={{ color: '#333', fontSize: '16px', fontWeight: '700' }}>Grahem D Maxwell</h4>
+                            <span style={{ fontSize: '14px', color: '#888' }}>( Zllius INC- Houston)</span>
+                            <p style={{ fontStyle: 'italic', color: '#555', marginBottom: '20px' }}>“We had been struggling to find a trustworthy partner to help us with ISO 9001 certification until we discovered Accurate ISO. Their expertise, attention to detail, and commitment to our success were outstanding. What stood out most was their ability to simplify complex standards and tailor their approach to our specific industry needs. We highly recommend Accurate ISO to any business looking to get certified with confidence.”</p>
+                        </div>
                     </div>
                 </div>
             </section>
@@ -221,38 +254,37 @@ const Home = () => {
             <section className="section-padding" style={{ backgroundColor: '#fff' }}>
                 <div className="container">
                     <div style={{ display: 'flex', gap: '50px', flexWrap: 'wrap', marginBottom: '60px' }}>
-                        <div style={{ flex: 1, minHeight: '300px', backgroundColor: '#eee', borderRadius: '8px' }}>
-                            {/* Image Placeholder */}
-                            <img src="https://accurateiso.com/wp-content/uploads/2025/10/Why-choose-us-image.jpg" alt="Why Choose Us" style={{ width: '100%', height: '100%', objectFit: 'cover', borderRadius: '8px' }} onError={(e) => e.target.style.display = 'none'} />
-                        </div>
+                        
                         <div style={{ flex: 1 }}>
                             <h2 style={{ color: '#08227A', fontSize: '32px', marginBottom: '30px' }}>Why Accurate Global?</h2>
-                            <ul style={{ listStyle: 'none', padding: 0 }}>
-                                {[
-                                    "Customer-centric approach",
-                                    "Competitive, price-effective services",
-                                    "Venturous and impartial maxim",
-                                    "Hassle-free approach",
-                                    "Sensible fees",
-                                    "15,000+ days of audit experience"
-                                ].map((item, idx) => (
-                                    <li key={idx} style={{ marginBottom: '15px', display: 'flex', alignItems: 'center', gap: '10px', fontSize: '16px', color: '#444' }}>
-                                        <i className="fas fa-check" style={{ color: 'var(--color-primary-blue)' }}></i> {item}
-                                    </li>
-                                ))}
+                            <div style={{ flex: 1, minHeight: '300px', backgroundColor: '#eee', borderRadius: '8px', display: 'flex', alignItems: 'center', justifyContent: 'center' }}>
+                                {/* Image Placeholder */}
+                                <img src="https://accurateiso.com/wp-content/uploads/2025/10/Why-choose-us-image.jpg" alt="Why Choose Us" style={{ width: '100%', height: '100%', objectFit: 'cover', borderRadius: '8px' }} onError={(e) => e.target.style.display = 'none'} />
+                            </div>
+                            <ul style={{ padding: 0 }}>
+                                <li>Customer – centric approach on assessments and training</li>
+                                <li>Competitive, price- effective and digital certification services</li>
+                                <li>Venturous and impartial maxim</li>
+                                <li>hassle free approach from the time of initial enquiry, through to application, assessment, and certification.</li>
+                                <li>Sensible fees for registration, assessment and surveillance</li>
+                                <li>Combined audit experience of 15,000 days.</li>
                             </ul>
                         </div>
                     </div>
                     <div style={{ textAlign: 'center', maxWidth: '800px', margin: '0 auto', backgroundColor: '#F9FAFC', padding: '40px', borderRadius: '8px' }}>
                         <h3 style={{ color: '#08227A', marginBottom: '15px' }}>Our Mission</h3>
-                        <p style={{ color: '#555', marginBottom: '25px' }}>To ensure the enhancement and continual improvement in the operational and quality efficiency of our clients.</p>
-                        <button className="btn btn-primary">Know More About Certifications</button>
+                        <p style={{ color: '#555', marginBottom: '25px' }}>To ensure the enhancement and continual improvement in the operational and quality efficiency through the value added, competitive, result oriented auditing practices to achieve international recognition for excellence of Management System Certification.</p>
+                        <button className="btn btn-primary">Know More About Certifications <i className="fas fa-chevron-right" /></button>
                     </div>
                 </div>
             </section>
 
             {/* 8. Empowerment Banner */}
-            <section style={{ padding: '60px 0', backgroundColor: '#08227A', color: 'white' }}>
+            <section style={{
+                backgroundImage: 'url(https://accurateiso.com/wp-content/uploads/2025/04/bg01.jpg)', // Using dark bg from analysis 
+                backgroundSize: 'cover',
+                color: 'white'
+            }}>
                 <div className="container">
                     <h2 style={{ textAlign: 'center', fontSize: '28px', marginBottom: '40px' }}>Empowering Our Customers to Succeed in International Business</h2>
                     <div style={{ display: 'flex', justifyContent: 'space-around', flexWrap: 'wrap', gap: '20px', textAlign: 'center' }}>
