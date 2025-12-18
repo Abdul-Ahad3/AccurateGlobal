@@ -7,7 +7,7 @@ const Home = () => {
             <section style={{
                 backgroundImage: 'url(https://accurateiso.com/wp-content/uploads/2025/10/Hero-Section-Home-page-Image-1.jpg)',
                 backgroundSize: '200% auto',
-                backgroundPosition: 'left center',
+                backgroundPosition: 'center',
                 color: 'white',
                 padding: '180px 0',
                 position: 'relative'
@@ -67,112 +67,200 @@ const Home = () => {
                 </div>
             </section>
 
-            {/* Services Summary Cards - Floating overlap */}
-            <section style={{ marginTop: '-140px', position: 'relative', zIndex: 3, paddingBottom: '60px' }}>
-                <hr style={{ marginTop: '1px', color: '#2f3137ff' }} />
-                <div className="container" style={{ display: 'grid', gridTemplateColumns: 'repeat(auto-fit, minmax(300px, 1fr))', gap: '30px' }}>
-                    <div style={{ padding: '40px', boxShadow: '0 10px 30px rgba(0,0,0,0.1)', borderRadius: '4px' }}>
-                        <h3 style={{ marginBottom: '15px', color: 'white' }}>Certification Services</h3>
+            {/* 1. Services Banner */}
+            <section style={{ backgroundColor: '#0A2A66', padding: '50px 0', color: 'white' }}>
+                <div className="container" style={{ display: 'flex', justifyContent: 'space-around', flexWrap: 'wrap', gap: '30px', textAlign: 'center' }}>
+                    <div style={{ maxWidth: '300px' }}>
+                        <i className="fas fa-certificate" style={{ fontSize: '40px', marginBottom: '15px', color: '#fff' }}></i>
+                        <h4 style={{ fontSize: '18px', fontWeight: '600' }}>Certification Services</h4>
                     </div>
-                    <div style={{ padding: '40px', color: 'white', boxShadow: '0 10px 30px rgba(0,0,0,0.1)', borderRadius: '4px' }}>
-                        <h3 style={{ marginBottom: '15px', color: 'white' }}>Governance, Risk & Compliance</h3>
+                    <div style={{ maxWidth: '300px' }}>
+                        <i className="fas fa-shield-alt" style={{ fontSize: '40px', marginBottom: '15px', color: '#fff' }}></i>
+                        <h4 style={{ fontSize: '18px', fontWeight: '600' }}>Governance, Risk & Compliance</h4>
                     </div>
-                    <div style={{ padding: '40px', boxShadow: '0 10px 30px rgba(0,0,0,0.1)', borderRadius: '4px' }}>
-                        <h3 style={{ marginBottom: '15px', color: 'white' }}>Training & Development for Individuals and Organizations</h3>
+                    <div style={{ maxWidth: '300px' }}>
+                        <i className="fas fa-user-graduate" style={{ fontSize: '40px', marginBottom: '15px', color: '#fff' }}></i>
+                        <h4 style={{ fontSize: '18px', fontWeight: '600' }}>Trainings & Development for Individuals and Organizations</h4>
                     </div>
                 </div>
             </section>
 
-            {/* Welcome Section */}
+            {/* 2. Welcome Section */}
             <section className="section-padding">
                 <div className="container">
-                    <div style={{ display: 'flex', alignItems: 'center', gap: '60px', flexWrap: 'wrap' }}>
-                        <div style={{ flex: 1 }}>
-                            <h4 style={{ color: 'var(--color-secondary-red)', fontWeight: '600', letterSpacing: '1px', marginBottom: '10px' }}>ABOUT US</h4>
-                            <h2 style={{ color: '#08227A', fontSize: '36px', marginBottom: '25px', lineHeight: '1.3' }}>Welcome To Accurate Global INC - Driving Excellence</h2>
-                            <p style={{ marginBottom: '20px', color: '#555' }}>
+                    <div style={{ display: 'flex', gap: '50px', flexWrap: 'wrap' }}>
+                        {/* Left: Text & Highlights */}
+                        <div style={{ flex: 1, minWidth: '300px' }}>
+                            <h4 style={{ color: 'var(--color-secondary-red)', fontWeight: '600', letterSpacing: '1px', marginBottom: '10px' }}>WELCOME TO ACCURATE GLOBAL INC</h4>
+                            <h2 style={{ color: '#08227A', fontSize: '36px', marginBottom: '25px', lineHeight: '1.3' }}>Driving Excellence with International Certifications</h2>
+                            <p style={{ marginBottom: '30px', color: '#555', lineHeight: '1.7' }}>
                                 Accurate Global INC is a leading provider of management system certification and training. We are committed to adding value to your business through our expert auditing and training services.
                             </p>
-                            <p style={{ marginBottom: '30px', color: '#555' }}>
-                                Our approach is pragmatic and supportive, helping you not just to comply, but to improve your business performance.
-                            </p>
-                            <button className="btn btn-secondary">Read More</button>
+                            <div style={{ display: 'grid', gridTemplateColumns: '1fr 1fr', gap: '20px' }}>
+                                <div style={{ display: 'flex', alignItems: 'center', gap: '10px' }}>
+                                    <i className="fas fa-check-circle" style={{ color: 'var(--color-secondary-red)', fontSize: '20px' }}></i>
+                                    <span style={{ fontWeight: '600', color: '#333' }}>14 Years Experience</span>
+                                </div>
+                                <div style={{ display: 'flex', alignItems: 'center', gap: '10px' }}>
+                                    <i className="fas fa-users" style={{ color: 'var(--color-secondary-red)', fontSize: '20px' }}></i>
+                                    <span style={{ fontWeight: '600', color: '#333' }}>150+ Expert Auditors</span>
+                                </div>
+                                <div style={{ display: 'flex', alignItems: 'center', gap: '10px' }}>
+                                    <i className="fas fa-globe" style={{ color: 'var(--color-secondary-red)', fontSize: '20px' }}></i>
+                                    <span style={{ fontWeight: '600', color: '#333' }}>50+ Countries</span>
+                                </div>
+                                <div style={{ display: 'flex', alignItems: 'center', gap: '10px' }}>
+                                    <i className="fas fa-smile" style={{ color: 'var(--color-secondary-red)', fontSize: '20px' }}></i>
+                                    <span style={{ fontWeight: '600', color: '#333' }}>1000+ Clients</span>
+                                </div>
+                            </div>
                         </div>
-                        <div style={{ flex: 1, minHeight: '400px', backgroundImage: 'url(https://accurateiso.com/wp-content/uploads/2025/10/Hero-Section-Home-page-Image-1.jpg)', backgroundSize: 'cover', borderRadius: '8px', boxShadow: '0 20px 40px rgba(0,0,0,0.1)' }}>
-                            {/* Image Container using same hero image for now as placeholder for Welcome image */}
+                        {/* Right: Cards */}
+                        <div style={{ flex: 1, minWidth: '300px', display: 'flex', flexDirection: 'column', gap: '20px' }}>
+                            <div style={{ padding: '30px', backgroundColor: '#f9f9f9', borderLeft: '5px solid var(--color-primary-blue)' }}>
+                                <h4 style={{ fontSize: '20px', color: '#08227A', marginBottom: '10px' }}>ISO Certification</h4>
+                                <p style={{ color: '#666', fontSize: '14px' }}>Accurate Global is Certification body offering renowned worldwide ISO Certification services.</p>
+                            </div>
+                            <div style={{ padding: '30px', backgroundColor: '#f9f9f9', borderLeft: '5px solid var(--color-secondary-red)' }}>
+                                <h4 style={{ fontSize: '20px', color: '#08227A', marginBottom: '10px' }}>Training & Development</h4>
+                                <p style={{ color: '#666', fontSize: '14px' }}>Accurate Global provides leading training and development programs.</p>
+                            </div>
                         </div>
                     </div>
                 </div>
             </section>
 
-            {/* ISO Portfolio Section (Grid) */}
+            {/* 3. ISO Certification Grid */}
             <section className="section-padding" style={{ backgroundColor: '#F9FAFC' }}>
                 <div className="container">
                     <div style={{ textAlign: 'center', marginBottom: '50px' }}>
-                        <h4 style={{ color: 'var(--color-secondary-red)', fontWeight: '600', letterSpacing: '1px' }}>WHAT WE DO</h4>
-                        <h2 style={{ color: '#08227A', fontSize: '36px' }}>ISO Certification Portfolio</h2>
+                        <h2 style={{ color: '#08227A', fontSize: '36px' }}>Management System Certification and Trainings</h2>
                     </div>
-                    <div style={{ display: 'grid', gridTemplateColumns: 'repeat(auto-fit, minmax(250px, 1fr))', gap: '30px' }}>
-                        {['ISO 9001', 'ISO 14001', 'ISO 45001', 'ISO 27001', 'ISO 22000', 'ISO 13485', 'ISO 50001', 'ISO 37001'].map(iso => (
-                            <div key={iso} style={{ padding: '30px', backgroundColor: 'white', borderRadius: '8px', textAlign: 'center', boxShadow: '0 5px 15px rgba(0,0,0,0.05)', transition: 'transform 0.3s' }}>
-                                <div style={{ width: '60px', height: '60px', backgroundColor: '#EBF1FF', borderRadius: '50%', margin: '0 auto 20px', display: 'flex', alignItems: 'center', justifyContent: 'center', color: 'var(--color-primary-blue)', fontSize: '24px' }}> <i className="fas fa-certificate"></i> </div>
-                                <h4 style={{ color: '#08227A', marginBottom: '10px' }}>{iso}</h4>
-                                <p style={{ fontSize: '14px', color: '#777' }}>Internationally recognized standard.</p>
-                            </div>
-                        ))}
-                    </div>
-                </div>
-            </section>
-
-            {/* Audit Methodology Section */}
-            <section className="section-padding" style={{ position: 'relative', overflow: 'hidden' }}>
-                <div style={{ position: 'absolute', right: 0, top: '50%', transform: 'translateY(-50%)', opacity: 0.1, zIndex: -1 }}>
-                    <img src="https://accurateiso.com/wp-content/uploads/2025/04/shape01.png" alt="shape" />
-                </div>
-                <div className="container">
-                    <h4 style={{ textAlign: 'center', color: 'var(--color-secondary-red)', fontWeight: '600' }}>PROCESS</h4>
-                    <h2 style={{ textAlign: 'center', color: '#08227A', fontSize: '36px', marginBottom: '50px' }}>Our Audit Methodology</h2>
-
-                    <div style={{ display: 'flex', justifyContent: 'space-between', gap: '30px', flexWrap: 'wrap' }}>
-                        {['Customer Understanding', 'Stage-1 Audit', 'Stage-2 Audit', 'Continued Evaluation'].map((step, index) => (
-                            <div key={index} style={{ flex: 1, minWidth: '200px', textAlign: 'center' }}>
-                                <div style={{ width: '80px', height: '80px', backgroundColor: index % 2 === 0 ? 'var(--color-secondary-red)' : 'var(--color-primary-blue)', color: 'white', borderRadius: '50%', margin: '0 auto 20px', display: 'flex', alignItems: 'center', justifyContent: 'center', fontSize: '24px', fontWeight: '700' }}>
-                                    {index + 1}
+                    <div style={{ display: 'grid', gridTemplateColumns: 'repeat(auto-fit, minmax(300px, 1fr))', gap: '30px' }}>
+                        {[
+                            { title: 'QMS: ISO 9001:2015', desc: 'Quality Management Systems' },
+                            { title: 'EMS: ISO 14001:2015', desc: 'Environmental Management Systems' },
+                            { title: 'ISO 45001:2018', desc: 'Occupational Health & Safety' },
+                            { title: 'ISO 27001:2022', desc: 'Information Security Management' },
+                            { title: 'ISO 50001:2018', desc: 'Energy Management Systems' },
+                            { title: 'ISO 22000:2018', desc: 'Food Safety Management' }
+                        ].map((item, index) => (
+                            <div key={index} style={{ backgroundColor: 'white', borderRadius: '8px', overflow: 'hidden', boxShadow: '0 5px 15px rgba(0,0,0,0.05)' }}>
+                                <div style={{ height: '200px', backgroundColor: '#eee', display: 'flex', alignItems: 'center', justifyContent: 'center', color: '#aaa' }}>
+                                    <i className="fas fa-image" style={{ fontSize: '40px' }}></i> {/* Placeholder for Image */}
                                 </div>
-                                <h4 style={{ color: '#333' }}>{step}</h4>
-                                <p style={{ fontSize: '14px', color: '#666', marginTop: '10px' }}>
-                                    We ensure a thorough and value-adding audit process.
-                                </p>
+                                <div style={{ padding: '20px' }}>
+                                    <h4 style={{ color: '#08227A', marginBottom: '5px' }}>{item.title}</h4>
+                                    <p style={{ fontSize: '14px', color: '#777' }}>{item.desc}</p>
+                                </div>
                             </div>
                         ))}
                     </div>
                 </div>
             </section>
 
-            {/* Stats Section with Background */}
-            <section style={{
-                backgroundImage: 'url(https://accurateiso.com/wp-content/uploads/2025/04/bg01.jpg)',
-                backgroundAttachment: 'fixed',
+            {/* 4. Certification Process */}
+            <section className="section-padding" style={{
+                backgroundImage: 'url(https://accurateiso.com/wp-content/uploads/2025/04/bg01.jpg)', // Using dark bg from analysis 
                 backgroundSize: 'cover',
-                padding: '80px 0',
-                position: 'relative'
+                color: 'white'
             }}>
-                <div style={{ position: 'absolute', top: 0, left: 0, width: '100%', height: '100%', backgroundColor: 'rgba(8, 34, 122, 0.8)' }}></div>
-                <div className="container" style={{ position: 'relative', zIndex: 2, display: 'flex', justifyContent: 'space-around', flexWrap: 'wrap', gap: '30px', textAlign: 'center', color: 'white' }}>
+                <div className="container" style={{ textAlign: 'center' }}>
+                    <h2 style={{ fontSize: '30px', marginBottom: '50px', maxWidth: '800px', margin: '0 auto 50px' }}>We begin with identifying and understanding the client’s needs and expectations.</h2>
+                    <div style={{ display: 'flex', justifyContent: 'center', gap: '20px', flexWrap: 'wrap' }}>
+                        {['Customer Understanding', 'Stage-1 Audit', 'Assessing', 'Stage-2 Audit', 'Continued Evaluation'].map((step, index) => (
+                            <div key={index} style={{ flex: '1', minWidth: '150px', maxWidth: '200px' }}>
+                                <div style={{ width: '60px', height: '60px', borderRadius: '50%', border: '2px solid white', margin: '0 auto 15px', display: 'flex', alignItems: 'center', justifyContent: 'center', fontWeight: '700', fontSize: '20px' }}>{index + 1}</div>
+                                <h4 style={{ fontSize: '16px' }}>{step}</h4>
+                            </div>
+                        ))}
+                    </div>
+                    <button className="btn btn-primary" style={{ marginTop: '50px' }}>Our Certifications</button>
+                </div>
+            </section>
+
+            {/* 5. Stats Section (User's Custom Content) */}
+            <section style={{ backgroundColor: '#f4f4f4', padding: '60px 0' }}>
+                <div className="container" style={{ display: 'flex', justifyContent: 'space-around', flexWrap: 'wrap', gap: '30px', textAlign: 'center', color: '#333' }}>
                     <div>
-                        <h3 style={{ fontSize: '50px', fontWeight: '700', marginBottom: '5px' }}>1,000<span style={{ fontSize: '30px', verticalAlign: 'super' }}>+</span></h3>
-                        <h4 style={{ fontSize: '18px', fontWeight: '600', marginBottom: '10px' }}>Active Clients</h4>
-                        <p style={{ fontSize: '14px', maxWidth: '200px', margin: '0 auto', opacity: 0.9 }}>We are having active clients worldwide.</p>
+                        <h3 style={{ fontSize: '40px', fontWeight: '700', marginBottom: '5px', color: '#08227A' }}>1,000<span style={{ fontSize: '24px', verticalAlign: 'super' }}>+</span></h3>
+                        <h4 style={{ fontSize: '16px', fontWeight: '600', marginBottom: '5px' }}>Active Clients</h4>
+                        <p style={{ fontSize: '13px', color: '#666', maxWidth: '200px', margin: '0 auto' }}>We are having active clients worldwide.</p>
                     </div>
                     <div>
-                        <h3 style={{ fontSize: '50px', fontWeight: '700', marginBottom: '5px' }}>100<span style={{ fontSize: '30px', verticalAlign: 'super' }}>%</span></h3>
-                        <h4 style={{ fontSize: '18px', fontWeight: '600', marginBottom: '10px' }}>Clients Satisfied</h4>
-                        <p style={{ fontSize: '14px', maxWidth: '200px', margin: '0 auto', opacity: 0.9 }}>Our client satisfaction ratio is 100%.</p>
+                        <h3 style={{ fontSize: '40px', fontWeight: '700', marginBottom: '5px', color: '#08227A' }}>100<span style={{ fontSize: '24px', verticalAlign: 'super' }}>%</span></h3>
+                        <h4 style={{ fontSize: '16px', fontWeight: '600', marginBottom: '5px' }}>Clients Satisfied</h4>
+                        <p style={{ fontSize: '13px', color: '#666', maxWidth: '200px', margin: '0 auto' }}>Our client satisfaction ratio is 100%.</p>
                     </div>
                     <div>
-                        <h3 style={{ fontSize: '50px', fontWeight: '700', marginBottom: '5px' }}>50<span style={{ fontSize: '30px', verticalAlign: 'super' }}>+</span></h3>
-                        <h4 style={{ fontSize: '18px', fontWeight: '600', marginBottom: '10px' }}>Countries</h4>
-                        <p style={{ fontSize: '14px', maxWidth: '200px', margin: '0 auto', opacity: 0.9 }}>We have worldwide network in many countries.</p>
+                        <h3 style={{ fontSize: '40px', fontWeight: '700', marginBottom: '5px', color: '#08227A' }}>50<span style={{ fontSize: '24px', verticalAlign: 'super' }}>+</span></h3>
+                        <h4 style={{ fontSize: '16px', fontWeight: '600', marginBottom: '5px' }}>Countries</h4>
+                        <p style={{ fontSize: '13px', color: '#666', maxWidth: '200px', margin: '0 auto' }}>We have worldwide network in many countries.</p>
+                    </div>
+                </div>
+            </section>
+
+            {/* 6. Testimonials */}
+            <section className="section-padding">
+                <div className="container" style={{ textAlign: 'center' }}>
+                    <h2 style={{ color: '#08227A', fontSize: '36px', marginBottom: '50px' }}>What Our Clients Say</h2>
+                    <div style={{ display: 'flex', gap: '30px', justifyContent: 'center', flexWrap: 'wrap' }}>
+                        {[1, 2, 3].map(i => (
+                            <div key={i} style={{ flex: 1, minWidth: '300px', padding: '30px', boxShadow: '0 5px 20px rgba(0,0,0,0.05)', borderRadius: '8px', backgroundColor: 'white', textAlign: 'left' }}>
+                                <div style={{ color: '#FFD700', marginBottom: '15px' }}><i className="fas fa-star"></i><i className="fas fa-star"></i><i className="fas fa-star"></i><i className="fas fa-star"></i><i className="fas fa-star"></i></div>
+                                <p style={{ fontStyle: 'italic', color: '#555', marginBottom: '20px' }}>"The service was exceptional and professional. Highly recommended for ISO certification."</p>
+                                <h4 style={{ color: '#333', fontSize: '16px', fontWeight: '700' }}>Client Name</h4>
+                                <span style={{ fontSize: '14px', color: '#888' }}>Company Ltd.</span>
+                            </div>
+                        ))}
+                    </div>
+                </div>
+            </section>
+
+            {/* 7. Why Choose Us & Mission */}
+            <section className="section-padding" style={{ backgroundColor: '#fff' }}>
+                <div className="container">
+                    <div style={{ display: 'flex', gap: '50px', flexWrap: 'wrap', marginBottom: '60px' }}>
+                        <div style={{ flex: 1, minHeight: '300px', backgroundColor: '#eee', borderRadius: '8px' }}>
+                            {/* Image Placeholder */}
+                            <img src="https://accurateiso.com/wp-content/uploads/2025/10/Why-choose-us-image.jpg" alt="Why Choose Us" style={{ width: '100%', height: '100%', objectFit: 'cover', borderRadius: '8px' }} onError={(e) => e.target.style.display = 'none'} />
+                        </div>
+                        <div style={{ flex: 1 }}>
+                            <h2 style={{ color: '#08227A', fontSize: '32px', marginBottom: '30px' }}>Why Accurate Global?</h2>
+                            <ul style={{ listStyle: 'none', padding: 0 }}>
+                                {[
+                                    "Customer-centric approach",
+                                    "Competitive, price-effective services",
+                                    "Venturous and impartial maxim",
+                                    "Hassle-free approach",
+                                    "Sensible fees",
+                                    "15,000+ days of audit experience"
+                                ].map((item, idx) => (
+                                    <li key={idx} style={{ marginBottom: '15px', display: 'flex', alignItems: 'center', gap: '10px', fontSize: '16px', color: '#444' }}>
+                                        <i className="fas fa-check" style={{ color: 'var(--color-primary-blue)' }}></i> {item}
+                                    </li>
+                                ))}
+                            </ul>
+                        </div>
+                    </div>
+                    <div style={{ textAlign: 'center', maxWidth: '800px', margin: '0 auto', backgroundColor: '#F9FAFC', padding: '40px', borderRadius: '8px' }}>
+                        <h3 style={{ color: '#08227A', marginBottom: '15px' }}>Our Mission</h3>
+                        <p style={{ color: '#555', marginBottom: '25px' }}>To ensure the enhancement and continual improvement in the operational and quality efficiency of our clients.</p>
+                        <button className="btn btn-primary">Know More About Certifications</button>
+                    </div>
+                </div>
+            </section>
+
+            {/* 8. Empowerment Banner */}
+            <section style={{ padding: '60px 0', backgroundColor: '#08227A', color: 'white' }}>
+                <div className="container">
+                    <h2 style={{ textAlign: 'center', fontSize: '28px', marginBottom: '40px' }}>Empowering Our Customers to Succeed in International Business</h2>
+                    <div style={{ display: 'flex', justifyContent: 'space-around', flexWrap: 'wrap', gap: '20px', textAlign: 'center' }}>
+                        {["Commitment to Customers", "Commitment to Growth", "Commitment to Excellence", "Commitment to Certify"].map((item, i) => (
+                            <div key={i} style={{ border: '1px solid rgba(255,255,255,0.3)', padding: '20px', borderRadius: '4px', minWidth: '200px' }}>
+                                <h4 style={{ fontSize: '16px', fontWeight: '500' }}>{item}</h4>
+                            </div>
+                        ))}
                     </div>
                 </div>
             </section>
