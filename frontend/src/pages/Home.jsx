@@ -6,10 +6,10 @@ const Home = () => {
             {/* Hero Section */}
             <section style={{
                 backgroundImage: 'url(https://accurateiso.com/wp-content/uploads/2025/10/Hero-Section-Home-page-Image-1.jpg)',
-                backgroundSize: 'cover',
-                backgroundPosition: 'center',
+                backgroundSize: '200% auto',
+                backgroundPosition: 'left center',
                 color: 'white',
-                padding: '120px 0',
+                padding: '180px 0',
                 position: 'relative'
             }}>
                 <div style={{ position: 'absolute', top: 0, left: 0, width: '100%', height: '100%', backgroundColor: 'rgba(5, 23, 71, 0.7)' }}></div>
@@ -28,20 +28,20 @@ const Home = () => {
                         </div>
 
                         {/* Right Column: Inquiry Form */}
-                        <div style={{ flex: '0 0 400px', maxWidth: '100%', backgroundColor: 'white', padding: '30px', borderRadius: '8px', boxShadow: '0 10px 30px rgba(0,0,0,0.2)'}}>
-                            <p style={{ fontSize: '14px', marginBottom: '10px', fontWeight: '300',  color: '#565656ff', textAlign: 'center'}}>
+                        <div style={{ flex: '0 0 400px', maxWidth: '100%', backgroundColor: 'white', padding: '30px', marginRight: '0px', boxShadow: '0 10px 30px rgba(0,0,0,0.2)' }}>
+                            <p style={{ fontSize: '14px', marginBottom: '10px', fontWeight: '300', color: '#565656ff', textAlign: 'center' }}>
                                 Free Consultation
                             </p>
                             <h3 style={{ color: '#333', marginBottom: '20px', textAlign: 'center', fontSize: '22px' }}>Book Appointment</h3>
                             <form>
-                                <div style={{ marginBottom: '15px' }}>
-                                    <input type="text" placeholder="Your Name" style={{ width: '100%', padding: '12px', border: '1px solid #ddd', borderRadius: '4px', boxSizing: 'border-box' }} required />
+                                <div style={{ marginBottom: '25px' }}>
+                                    <input type="text" placeholder="Name" style={{ width: '100%', padding: '10px 15px', border: '1px solid black', borderRadius: '4px', boxSizing: 'border-box', fontSize: '18px' }} required />
                                 </div>
-                                <div style={{ marginBottom: '15px' }}>
-                                    <input type="email" placeholder="Your Email" style={{ width: '100%', padding: '12px', border: '1px solid #ddd', borderRadius: '4px', boxSizing: 'border-box' }} required />
+                                <div style={{ marginBottom: '25px' }}>
+                                    <input type="email" placeholder="Email Address" style={{ width: '100%', padding: '10px 15px', border: '1px solid black', borderRadius: '4px', boxSizing: 'border-box', fontSize: '18px' }} required />
                                 </div>
-                                <div style={{ marginBottom: '15px' }}>
-                                    <select style={{ width: '100%', padding: '12px', border: '1px solid #ddd', borderRadius: '4px', boxSizing: 'border-box', color: '#555' }}>
+                                <div style={{ marginBottom: '25px' }}>
+                                    <select style={{ width: '100%', padding: '10px 15px', border: '1px solid black', borderRadius: '4px', boxSizing: 'border-box', color: '#555', fontSize: '18px' }}>
                                         <option value="">Select ISO Certificate</option>
                                         <option value="ISO 9001:2015">ISO 9001:2015</option>
                                         <option value="ISO 14001:2015">ISO 14001:2015</option>
@@ -57,8 +57,8 @@ const Home = () => {
                                         <option value="ISO/IEC 27701:2019">ISO/IEC 27701:2019</option>
                                     </select>
                                 </div>
-                                <div style={{ marginBottom: '15px' }}>
-                                    <textarea placeholder="Your Message" rows="3" style={{ width: '100%', padding: '12px', border: '1px solid #ddd', borderRadius: '4px', boxSizing: 'border-box', fontFamily: 'inherit' }}></textarea>
+                                <div style={{ marginBottom: '25px' }}>
+                                    <textarea placeholder="Type your message here" rows="3" style={{ width: '100%', padding: '10px 15px', border: '1px solid black', borderRadius: '4px', boxSizing: 'border-box', fontFamily: 'inherit', fontSize: '18px' }}></textarea>
                                 </div>
                                 <button type="submit" className="btn btn-primary" style={{ width: '100%', padding: '12px' }}>Submit</button>
                             </form>
