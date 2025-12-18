@@ -19,17 +19,20 @@ const Home = () => {
                         <div style={{ flex: '1', minWidth: '300px', textAlign: 'left' }}>
                             <h1 style={{ fontSize: '48px', marginBottom: '20px', fontWeight: '700', lineHeight: '1.2' }}>Accredited ISO Certification and<br />Professional Training!</h1>
                             <p style={{ fontSize: '24px', marginBottom: '30px', fontWeight: '300' }}>
-                                Free Consultation
+                                Delivering Excellence through Internationally Accredited Management System
                             </p>
                             <div style={{ display: 'flex', gap: '15px' }}>
-                                <button className="btn btn-primary" style={{ fontSize: '16px', padding: '12px 30px' }}>Book Appointment</button>
-                                <a href="/apply-for-training" className="btn btn-secondary" style={{ fontSize: '16px', padding: '12px 30px', textDecoration: 'none', display: 'inline-block' }}>Apply for Training</a>
+                                <button className="btn btn-primary" style={{ fontSize: '16px', padding: '12px 30px' }}>Apply for Certitifacte <i className="fas fa-chevron-right" /></button>
+                                <a href="/apply-for-training" className="btn btn-secondary" style={{ fontSize: '16px', padding: '12px 30px', textDecoration: 'none', display: 'inline-block' }}>Apply for Training <i className="fas fa-chevron-right" /></a>
                             </div>
                         </div>
 
                         {/* Right Column: Inquiry Form */}
-                        <div style={{ flex: '0 0 400px', maxWidth: '100%', backgroundColor: 'white', padding: '30px', borderRadius: '8px', boxShadow: '0 10px 30px rgba(0,0,0,0.2)' }}>
-                            <h3 style={{ color: '#333', marginBottom: '20px', textAlign: 'center', fontSize: '22px' }}>Request a Quote</h3>
+                        <div style={{ flex: '0 0 400px', maxWidth: '100%', backgroundColor: 'white', padding: '30px', borderRadius: '8px', boxShadow: '0 10px 30px rgba(0,0,0,0.2)'}}>
+                            <p style={{ fontSize: '14px', marginBottom: '10px', fontWeight: '300',  color: '#565656ff', textAlign: 'center'}}>
+                                Free Consultation
+                            </p>
+                            <h3 style={{ color: '#333', marginBottom: '20px', textAlign: 'center', fontSize: '22px' }}>Book Appointment</h3>
                             <form>
                                 <div style={{ marginBottom: '15px' }}>
                                     <input type="text" placeholder="Your Name" style={{ width: '100%', padding: '12px', border: '1px solid #ddd', borderRadius: '4px', boxSizing: 'border-box' }} required />
