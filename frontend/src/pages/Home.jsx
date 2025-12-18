@@ -148,61 +148,80 @@ const Home = () => {
             </section>
 
             {/* 4. Certification Process */}
-            <section className="section-padding" style={{ padding: '60px 0', backgroundColor: '#08227A', color: 'white' }}>
+            {/* 4. Certification Process */}
+            <section className="section-padding" style={{ padding: '80px 0', backgroundColor: '#08227A', color: 'white' }}>
                 <div className="container">
-                    <h2 style={{ fontSize: '30px', marginBottom: '50px', maxWidth: '800px', margin: '0 auto 50px' }}>We begin with identifying and understanding the client’s needs and expectations. This includes:</h2>
-                    <button className="btn btn-primary" style={{ marginBottom: '50px' }}>Our Certifications <i className="fas fa-chevron-right" /></button>
-                    <div style={{ display: 'flex', justifyContent: 'center', gap: '20px', flexWrap: 'wrap' }}>
-                        <div style={{ flex: '1', minWidth: '150px', maxWidth: '200px' }}>
-                            <h4 style={{ fontSize: '16px' }}>Customer Understanding</h4>
-                            <p>
-                                We begin by identifying and understanding the client’s needs and expectations. This includes:
-                                <ul>
+                    <div style={{ display: 'flex', gap: '40px', flexWrap: 'wrap' }}>
+
+                        {/* Left Column */}
+                        <div style={{ flex: 1, minWidth: '300px', display: 'flex', flexDirection: 'column', gap: '40px' }}>
+                            {/* Title */}
+                            <div>
+                                <h2 style={{ fontSize: '30px', margin: 0 }}>We begin with identifying and understanding the client’s needs and expectations. This includes:</h2>
+                            </div>
+
+                            {/* Customer Understanding */}
+                            <div>
+                                <h4 style={{ fontSize: '20px', marginBottom: '15px', color: 'white' }}>Customer Understanding</h4>
+                                <p style={{ fontSize: '15px', lineHeight: '1.6', marginBottom: '10px', color: 'grey' }}>We begin by identifying and understanding the client’s needs and expectations. This includes:</p>
+                                <ul style={{ paddingLeft: '20px', lineHeight: '1.8', color: 'grey' }}>
                                     <li>Collecting initial information</li>
                                     <li>Understanding the the Standards Requirement for Certification</li>
                                     <li>Presenting an audit and certification proposal</li>
                                     <li>Defining a clear roadmap toward excellence</li>
                                 </ul>
-                            </p>
-                        </div>
-                        
-                        <div style={{ flex: '1', minWidth: '150px', maxWidth: '200px' }}>
-                            <h4 style={{ fontSize: '16px' }}>Stage-2 Audit</h4>
-                            <p>
-                                The certification process involves:
-                                <ul>
+                            </div>
+
+                            {/* Stage-2 Audit */}
+                            <div>
+                                <h4 style={{ fontSize: '20px', marginBottom: '15px', color: 'white' }}>Stage-2 Audit</h4>
+                                <p style={{ fontSize: '15px', lineHeight: '1.6', marginBottom: '10px', color: 'grey' }}>The certification process involves:</p>
+                                <ul style={{ paddingLeft: '20px', lineHeight: '1.8', color: 'grey' }}>
                                     <li>Auditing the implementation of the management system.</li>
                                     <li>Submitting a detailed report highlighting non-conformities and areas for improvement.</li>
                                     <li>Verifying the effectiveness of the closures of non-conformities.</li>
                                     <li>Verifying the organization commitment to continual improvement.</li>
                                     <li>Awarding the Management System – the certification.</li>
                                 </ul>
-                            </p>
+                            </div>
                         </div>
-                        
-                        <div style={{ flex: '1', minWidth: '150px', maxWidth: '200px' }}>
-                            <h4 style={{ fontSize: '16px' }}>Stage-1 Audit</h4>
-                            <p>
-                                We evaluate the maturity of the management system to ensure alignment with international standards. This stage includes:
-                                <ul>
+
+                        {/* Center Image */}
+                        <div style={{ width: '300px', borderRadius: '8px', overflow: 'hidden', display: 'none', '@media (min-width: 992px)': { display: 'block' } }} className="d-none d-lg-block">
+                            {/* Note: using d-none d-lg-block class if available, else style text. Assuming standard simple structure for now, user can refined responsive later. I will just style it normally. */}
+                            <img src="https://images.unsplash.com/photo-1585155967849-91c736589c84?q=80&w=327&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="Statue of Liberty" style={{ width: '100%', height: '100%', objectFit: 'cover' }} />
+                        </div>
+
+                        {/* Right Column */}
+                        <div style={{ flex: 1, minWidth: '300px', display: 'flex', flexDirection: 'column', gap: '40px' }}>
+                            {/* Button */}
+                            <div style={{ display: 'flex', justifyContent: 'flex-start', alignItems: 'center', height: '100px' }}> {/* Height matched to title approx or just align start */}
+                                <button className="btn btn-primary" style={{ padding: '15px 30px' }}>Our Certifications <i className="fas fa-chevron-right" style={{ marginLeft: '10px' }} /></button>
+                            </div>
+
+                            {/* Stage-1 Audit */}
+                            <div>
+                                <h4 style={{ fontSize: '20px', marginBottom: '15px', color: 'white' }}>Stage-1 Audit</h4>
+                                <p style={{ fontSize: '15px', lineHeight: '1.6', marginBottom: '10px', color: 'grey' }}>We evaluate the maturity of the management system to ensure alignment with international standards. This stage includes:</p>
+                                <ul style={{ paddingLeft: '20px', lineHeight: '1.8', color: 'grey' }}>
                                     <li>Assessing the current system’s maturity level.</li>
                                     <li>Verification of the Legal Documents and Structure of the organization.</li>
                                     <li>Assessment of the Infrstructure and Management System Documentation.</li>
                                     <li>Submitting a report to measure progress against expected benchmarks and Gaps.</li>
                                 </ul>
-                            </p>
-                        </div>
-                        
-                        <div style={{ flex: '1', minWidth: '150px', maxWidth: '200px' }}>
-                            <h4 style={{ fontSize: '16px' }}>Continued Evaluation</h4>
-                            <p>
-                                To maintain and improve certification standards, we carry out:
-                                <ul>
+                            </div>
+
+                            {/* Continued Evaluation */}
+                            <div>
+                                <h4 style={{ fontSize: '20px', marginBottom: '15px', color: 'white' }}>Continued Evaluation</h4>
+                                <p style={{ fontSize: '15px', lineHeight: '1.6', marginBottom: '10px', color: 'grey' }}>To maintain and improve certification standards, we carry out:</p>
+                                <ul style={{ paddingLeft: '20px', lineHeight: '1.8', color: 'grey' }}>
                                     <li>Ongoing evaluation through surveillance and re-assessment audits.</li>
                                     <li>Ensuring the management system remains mature and capable of continual improvement.</li>
                                 </ul>
-                            </p>
+                            </div>
                         </div>
+
                     </div>
                 </div>
             </section>
@@ -210,41 +229,64 @@ const Home = () => {
             {/* 5. Stats Section (User's Custom Content) */}
             <section style={{ backgroundColor: '#f4f4f4', padding: '60px 0' }}>
                 <div className="container" style={{ display: 'flex', justifyContent: 'space-around', flexWrap: 'wrap', gap: '30px', textAlign: 'center', color: '#333' }}>
-                    <div>
-                        <h3 style={{ fontSize: '40px', fontWeight: '700', marginBottom: '5px', color: '#08227A' }}>1,000+</h3>
-                        <h4 style={{ fontSize: '16px', fontWeight: '600', marginBottom: '5px' }}>Active Clients</h4>
-                        <p style={{ fontSize: '13px', color: '#666', maxWidth: '200px', margin: '0 auto' }}>We are having active clients worldwide.</p>
+
+                    <div style={{ display: 'flex', alignItems: 'center', gap: '20px', textAlign: 'left' }}>
+                        <div style={{ display: 'flex', flexDirection: 'column', alignItems: 'flex-start' }}>
+                            <h3 style={{ fontSize: '48px', fontWeight: '700', color: '#08227A', margin: 0, lineHeight: 1 }}>1,000+</h3>
+                            <h4 style={{ fontSize: '18px', fontWeight: '600', margin: 0, marginTop: '5px' }}>Active<br />Clients</h4>
+                        </div>
+                        <div style={{ width: '1px', height: '60px', backgroundColor: 'black' }}></div>
+                        <p style={{ fontSize: '16px', color: '#666', maxWidth: '150px', margin: 0 }}>We are having active clients worldwide.</p>
                     </div>
-                    <div>
-                        <h3 style={{ fontSize: '40px', fontWeight: '700', marginBottom: '5px', color: '#08227A' }}>100%</h3>
-                        <h4 style={{ fontSize: '16px', fontWeight: '600', marginBottom: '5px' }}>Clients Satisfied</h4>
-                        <p style={{ fontSize: '13px', color: '#666', maxWidth: '200px', margin: '0 auto' }}>Our client satisfaction ratio is 100%.</p>
+
+                    <div style={{ display: 'flex', alignItems: 'center', gap: '20px', textAlign: 'left' }}>
+                        <div style={{ display: 'flex', flexDirection: 'column', alignItems: 'flex-start' }}>
+                            <h3 style={{ fontSize: '48px', fontWeight: '700', color: '#08227A', margin: 0, lineHeight: 1 }}>100%</h3>
+                            <h4 style={{ fontSize: '18px', fontWeight: '600', margin: 0, marginTop: '5px' }}>Clients<br />Satisfied</h4>
+                        </div>
+                        <div style={{ width: '1px', height: '60px', backgroundColor: 'black' }}></div>
+                        <p style={{ fontSize: '16px', color: '#666', maxWidth: '150px', margin: 0 }}>Our client satisfaction ratio is 100%.</p>
                     </div>
-                    <div>
-                        <h3 style={{ fontSize: '40px', fontWeight: '700', marginBottom: '5px', color: '#08227A' }}>50+</h3>
-                        <h4 style={{ fontSize: '16px', fontWeight: '600', marginBottom: '5px' }}>Countries</h4>
-                        <p style={{ fontSize: '13px', color: '#666', maxWidth: '200px', margin: '0 auto' }}>We have worldwide network in many countries.</p>
+
+                    <div style={{ display: 'flex', alignItems: 'center', gap: '20px', textAlign: 'left' }}>
+                        <div style={{ display: 'flex', flexDirection: 'column', alignItems: 'flex-start' }}>
+                            <h3 style={{ fontSize: '48px', fontWeight: '700', color: '#08227A', margin: 0, lineHeight: 1 }}>50+</h3>
+                            <h4 style={{ fontSize: '18px', fontWeight: '600', margin: 0, marginTop: '5px' }}>Global<br />Countries</h4>
+                        </div>
+                        <div style={{ width: '1px', height: '60px', backgroundColor: 'black' }}></div>
+                        <p style={{ fontSize: '16px', color: '#666', maxWidth: '150px', margin: 0 }}>We have worldwide network in many countries.</p>
                     </div>
+
                 </div>
             </section>
 
             {/* 6. Testimonials */}
             <section className="section-padding">
-                <div className="container" style={{ textAlign: 'center' }}>
-                    <h2 style={{ color: '#08227A', fontSize: '36px', marginBottom: '50px' }}>What Our Clients Say</h2>
-                    <div style={{ display: 'flex', gap: '30px', justifyContent: 'center', flexWrap: 'wrap' }}>
-                        <div style={{ flex: 1, minWidth: '300px', padding: '30px', boxShadow: '0 5px 20px rgba(0,0,0,0.05)', borderRadius: '8px', backgroundColor: 'white', textAlign: 'left' }}>
-                            <div style={{ color: '#FFD700', marginBottom: '15px' }}><i className="fas fa-star"></i><i className="fas fa-star"></i><i className="fas fa-star"></i><i className="fas fa-star"></i><i className="fas fa-star"></i></div>
-                            <h4 style={{ color: '#333', fontSize: '16px', fontWeight: '700' }}>Paul Elenjikel</h4>
-                            <span style={{ fontSize: '14px', color: '#888' }}>(CBD Chicago INC)</span>
-                            <p style={{ fontStyle: 'italic', color: '#555', marginBottom: '20px' }}>“Accurate ISO made our ISO certification process seamless and stress-free. Their team was incredibly knowledgeable, guiding us through every step with clarity and professionalism. We were impressed by how responsive and supportive they were throughout the entire journey. Thanks to Accurate ISO, we not only achieved certification quickly but also gained valuable insights to improve our internal processes.”</p>
+                <div className="container">
+                    <div style={{ display: 'flex', gap: '50px', flexWrap: 'wrap' }}>
+                        {/* Left Column: Title & Button */}
+                        <div style={{ flex: 1, minWidth: '300px', display: 'flex', flexDirection: 'column', justifyContent: 'center', alignItems: 'flex-start' }}>
+                            <h2 style={{ color: '#08227A', fontSize: '36px', marginBottom: '30px', textAlign: 'left', fontWeight: '700' }}>What Our Clients Say</h2>
+                            <button className="btn btn-primary" style={{ padding: '12px 30px' }}>
+                                Know more about us <i className="fas fa-chevron-right" style={{ marginLeft: '10px' }} />
+                            </button>
                         </div>
 
-                        <div style={{ flex: 1, minWidth: '300px', padding: '30px', boxShadow: '0 5px 20px rgba(0,0,0,0.05)', borderRadius: '8px', backgroundColor: 'white', textAlign: 'left' }}>
-                            <div style={{ color: '#FFD700', marginBottom: '15px' }}><i className="fas fa-star"></i><i className="fas fa-star"></i><i className="fas fa-star"></i><i className="fas fa-star"></i><i className="fas fa-star"></i></div>
-                            <h4 style={{ color: '#333', fontSize: '16px', fontWeight: '700' }}>Grahem D Maxwell</h4>
-                            <span style={{ fontSize: '14px', color: '#888' }}>( Zllius INC- Houston)</span>
-                            <p style={{ fontStyle: 'italic', color: '#555', marginBottom: '20px' }}>“We had been struggling to find a trustworthy partner to help us with ISO 9001 certification until we discovered Accurate ISO. Their expertise, attention to detail, and commitment to our success were outstanding. What stood out most was their ability to simplify complex standards and tailor their approach to our specific industry needs. We highly recommend Accurate ISO to any business looking to get certified with confidence.”</p>
+                        {/* Right Column: Reviews */}
+                        <div style={{ flex: 2, display: 'flex', gap: '30px', flexWrap: 'wrap' }}>
+                            <div style={{ flex: 1, minWidth: '300px', padding: '30px', boxShadow: '0 5px 20px rgba(0,0,0,0.05)', borderRadius: '8px', backgroundColor: 'white', textAlign: 'left' }}>
+                                <div style={{ color: '#FFD700', marginBottom: '15px' }}><i className="fas fa-star"></i><i className="fas fa-star"></i><i className="fas fa-star"></i><i className="fas fa-star"></i><i className="fas fa-star"></i></div>
+                                <h4 style={{ color: '#333', fontSize: '16px', fontWeight: '700' }}>Paul Elenjikel</h4>
+                                <span style={{ fontSize: '14px', color: '#888' }}>(CBD Chicago INC)</span>
+                                <p style={{ fontStyle: 'italic', color: '#555', marginBottom: '20px', marginTop: '15px' }}>“Accurate ISO made our ISO certification process seamless and stress-free. Their team was incredibly knowledgeable, guiding us through every step with clarity and professionalism. We were impressed by how responsive and supportive they were throughout the entire journey. Thanks to Accurate ISO, we not only achieved certification quickly but also gained valuable insights to improve our internal processes.”</p>
+                            </div>
+
+                            <div style={{ flex: 1, minWidth: '300px', padding: '30px', boxShadow: '0 5px 20px rgba(0,0,0,0.05)', borderRadius: '8px', backgroundColor: 'white', textAlign: 'left' }}>
+                                <div style={{ color: '#FFD700', marginBottom: '15px' }}><i className="fas fa-star"></i><i className="fas fa-star"></i><i className="fas fa-star"></i><i className="fas fa-star"></i><i className="fas fa-star"></i></div>
+                                <h4 style={{ color: '#333', fontSize: '16px', fontWeight: '700' }}>Grahem D Maxwell</h4>
+                                <span style={{ fontSize: '14px', color: '#888' }}>( Zllius INC- Houston)</span>
+                                <p style={{ fontStyle: 'italic', color: '#555', marginBottom: '20px', marginTop: '15px' }}>“We had been struggling to find a trustworthy partner to help us with ISO 9001 certification until we discovered Accurate ISO. Their expertise, attention to detail, and commitment to our success were outstanding. What stood out most was their ability to simplify complex standards and tailor their approach to our specific industry needs. We highly recommend Accurate ISO to any business looking to get certified with confidence.”</p>
+                            </div>
                         </div>
                     </div>
                 </div>
@@ -254,42 +296,62 @@ const Home = () => {
             <section className="section-padding" style={{ backgroundColor: '#fff' }}>
                 <div className="container">
                     <div style={{ display: 'flex', gap: '50px', flexWrap: 'wrap', marginBottom: '60px' }}>
-                        
+
                         <div style={{ flex: 1 }}>
-                            <h2 style={{ color: '#08227A', fontSize: '32px', marginBottom: '30px' }}>Why Accurate Global?</h2>
-                            <div style={{ flex: 1, minHeight: '300px', backgroundColor: '#eee', borderRadius: '8px', display: 'flex', alignItems: 'center', justifyContent: 'center' }}>
-                                {/* Image Placeholder */}
-                                <img src="https://accurateiso.com/wp-content/uploads/2025/10/Why-choose-us-image.jpg" alt="Why Choose Us" style={{ width: '100%', height: '100%', objectFit: 'cover', borderRadius: '8px' }} onError={(e) => e.target.style.display = 'none'} />
+                            <h2 style={{ color: '#08227A', fontSize: '32px', marginBottom: '30px', textAlign: 'center' }}>Why Accurate Global?</h2>
+                            <div style={{ display: 'flex', gap: '40px', alignItems: 'stretch' }}>
+                                {/* Image Left */}
+                                <div style={{ flex: 1, minWidth: '300px', borderRadius: '8px', overflow: 'hidden', boxShadow: '0 10px 30px rgba(0,0,0,0.1)' }}>
+                                    <img src="https://images.unsplash.com/photo-1556761175-5973dc0f32e7?ixlib=rb-1.2.1&auto=format&fit=crop&w=1600&q=80" alt="Why Choose Us" style={{ width: '100%', height: '100%', objectFit: 'cover' }} />
+                                </div>
+                                {/* Right Column: List + Mission */}
+                                <div style={{ flex: 1, display: 'flex', flexDirection: 'column', justifyContent: 'center', gap: '30px' }}>
+                                    {/* List */}
+                                    <ul style={{ paddingLeft: '20px', color: '#555', fontSize: '15px', lineHeight: '1.8' }}>
+                                        {[
+                                            "Customer – centric approach on assessments and training",
+                                            "Competitive, price- effective and digital certification services",
+                                            "Venturous and impartial maxim",
+                                            "hassle free approach from the time of initial enquiry, through to application, assessment, and certification.",
+                                            "Sensible fees for registration, assessment and surveillance",
+                                            "Combined audit experience of 15,000 days."
+                                        ].map((item, idx) => (
+                                            <li key={idx} style={{ marginBottom: '10px' }}>
+                                                {item}
+                                            </li>
+                                        ))}
+                                    </ul>
+
+                                    {/* Mission (Moved here) */}
+                                    <div style={{ backgroundColor: '#F9FAFC', padding: '30px', borderRadius: '8px' }}>
+                                        <h3 style={{ color: '#08227A', marginBottom: '10px', fontSize: '20px' }}>Our Mission</h3>
+                                        <p style={{ color: '#555', marginBottom: '20px', fontSize: '14px' }}>To ensure the enhancement and continual improvement in the operational and quality efficiency through the value added, competitive, result oriented auditing practices to achieve international recognition for excellence of Management System Certification.</p>
+                                        <button className="btn btn-primary" style={{ padding: '10px 25px', fontSize: '14px' }}>Know More about certifications <i className="fas fa-chevron-right" style={{ marginLeft: '5px' }} /></button>
+                                    </div>
+                                </div>
                             </div>
-                            <ul style={{ padding: 0 }}>
-                                <li>Customer – centric approach on assessments and training</li>
-                                <li>Competitive, price- effective and digital certification services</li>
-                                <li>Venturous and impartial maxim</li>
-                                <li>hassle free approach from the time of initial enquiry, through to application, assessment, and certification.</li>
-                                <li>Sensible fees for registration, assessment and surveillance</li>
-                                <li>Combined audit experience of 15,000 days.</li>
-                            </ul>
                         </div>
-                    </div>
-                    <div style={{ textAlign: 'center', maxWidth: '800px', margin: '0 auto', backgroundColor: '#F9FAFC', padding: '40px', borderRadius: '8px' }}>
-                        <h3 style={{ color: '#08227A', marginBottom: '15px' }}>Our Mission</h3>
-                        <p style={{ color: '#555', marginBottom: '25px' }}>To ensure the enhancement and continual improvement in the operational and quality efficiency through the value added, competitive, result oriented auditing practices to achieve international recognition for excellence of Management System Certification.</p>
-                        <button className="btn btn-primary">Know More About Certifications <i className="fas fa-chevron-right" /></button>
                     </div>
                 </div>
             </section>
 
             {/* 8. Empowerment Banner */}
             <section style={{
-                backgroundImage: 'url(https://accurateiso.com/wp-content/uploads/2025/04/bg01.jpg)', // Using dark bg from analysis 
-                backgroundSize: 'cover',
-                color: 'white'
+                backgroundImage: 'url(https://accurateiso.com/wp-content/uploads/2025/04/bg01.jpg)',
+                backgroundSize: '150% auto',
+                height: '550px',
+                position: 'relative',
+                backgroundPosition: 'center',
+                color: 'white',
+                justifyContent: 'center',
+                alignItems: 'center',
+                display: 'flex',
             }}>
                 <div className="container">
-                    <h2 style={{ textAlign: 'center', fontSize: '28px', marginBottom: '40px' }}>Empowering Our Customers to Succeed in International Business</h2>
+                    <h1 style={{ textAlign: 'center', fontSize: '28px', marginTop: '40px' }}>Empowering Our Customers to <br /> Succeed in International Business</h1>
                     <div style={{ display: 'flex', justifyContent: 'space-around', flexWrap: 'wrap', gap: '20px', textAlign: 'center' }}>
                         {["Commitment to Customers", "Commitment to Growth", "Commitment to Excellence", "Commitment to Certify"].map((item, i) => (
-                            <div key={i} style={{ border: '1px solid rgba(255,255,255,0.3)', padding: '20px', borderRadius: '4px', minWidth: '200px' }}>
+                            <div key={i} style={{ backgroundColor: 'rgba(10, 0, 63, 0.7)', padding: '20px', minWidth: '200px', marginBottom: '40px', marginTop: '40px' }}>
                                 <h4 style={{ fontSize: '16px', fontWeight: '500' }}>{item}</h4>
                             </div>
                         ))}
